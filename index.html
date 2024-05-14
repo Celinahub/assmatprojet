@@ -46,7 +46,7 @@
     <nav class="navbar navbar-dark custom-navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
             <!-- Logo à gauche -->
-            <a class="navbar-brand" href="#presentation">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/navbar/logo-navbar-paint.png" alt="Céline Hubert logo ch" class="navbar-logo">
             </a>
 
@@ -303,7 +303,7 @@
                                                                                                                                                                                                                               <div class="content-to-show" id="content-to-show" style="display: none; opacity: 0; transition: opacity 3s ease-in;">
 
                                                                                                                                                                                                                                 <span>
-                                                                                                                                                                                                                                  <img src="images/presentation/approved-signal-svgrepo-com.svg" class="checked" alt="Description de votre image SVG">
+                                                                                                                                                                                                                                  <img src="images/presentation/approved-signal-svgrepo-com.svg" class="checked" alt="icône check de validation rencontrons-nous">
                                                                                                                                                                                                                                 </span>
 
                                                                                                                                                                                                                                 <p class="poppins-regular-checked">Rencontrons-nous</p>
@@ -320,7 +320,7 @@
                                                                                                                                                                                                                                   <p class="poppins-regular-rdv">
                                                                                                                                                                                                                                     Je propose un accueil sur-mesure près de chez vous, c'est avec plaisir que j'échangerai avec vous.
                                                                                                                                                                                                                                     <a href="contact.html">
-                                                                                                                                                                                                                                      <img src="images/presentation/thought-bubble-with-a-love-letter-svgrepo-com.svg" class="checked-localisation" alt="Description de votre image SVG">
+                                                                                                                                                                                                                                      <img src="images/presentation/thought-bubble-with-a-love-letter-svgrepo-com.svg" class="checked-localisation" alt="icône enveloppe de contact">
                                                                                                                                                                                                                                     </a>
                                                                                                                                                                                                                                   </p>
                                                                                                                                                                                                                                 </div>
@@ -366,7 +366,7 @@
             
             
             <!-- Colonne du milieu: Liens utiles -->
-<div class="col-md-4 col-sm-12 text-center liens-utiles-typo">
+            <div class="col-md-4 col-sm-12 text-center liens-utiles-typo align-center">
     <h5>Liens utiles</h5>
     <ul class="list-unstyled">
         <!-- Lien avec SVG aligné -->
@@ -383,11 +383,14 @@
             </a>
         </li>
         <li>
-            <a href="contact.html">
-                <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
-                Contact
+            <a href="contact.html" style="display: flex; align-items: center;">
+                <!-- Icône -->
+                <img src="images/pied-page/love-letter-svgrepo-com.svg" class="love-letter" alt="Arrow" style="margin-right: 5px;">
+                <!-- Adresse e-mail -->
+                <div id="emailContainer"></div>
             </a>
         </li>
+        
     </ul>
     <!-- Espacement entre le titre et le paragraphe -->
     <div class="pied-page-spacer"></div>
@@ -406,7 +409,7 @@
             
             <!-- Colonne de droite: Logo -->
             <div class="col-md-4 col-sm-12 text-center text-md-end">
-                <img src="images/pied-page/logo-navbar-paint-pied1.svg" class="logo-pied-page" alt="Logo">
+                <img src="images/pied-page/logo-navbar-paint-pied1.svg" class="logo-pied-page" alt="Logo chez Céline">
             </div>
         </div>
         
@@ -441,7 +444,12 @@
 <!-- Autres contenus précédents -->
 
 
+
+
 <script>
+
+// Script 1 presentation Céline Assistante maternelle
+
     document.addEventListener("DOMContentLoaded", function() {
         const celineText = document.getElementById("celine");
         const assistanteText = document.getElementById("assistante");
@@ -465,9 +473,10 @@
         // Démarrer immédiatement l'animation
         triggerAnimation();
     });
-    </script>
+    
 
-<script>
+// Script 2 rencontrons-nous 
+
 // Fonction pour vérifier si un élément est visible dans la fenêtre de l'utilisateur
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
@@ -491,15 +500,33 @@ function showContentWhenFooterVisible() {
 window.addEventListener("scroll", showContentWhenFooterVisible);
 
 
+// Script 3 mail pied de page 
+
+// Création de l'adresse e-mail
+var a = "chubert.assmat91";
+    var b = "yahoo.com";
+    var c = a + "@" + b;
+
+    // Sélection de l'élément où vous souhaitez ajouter le lien e-mail
+    var container = document.getElementById('emailContainer');
+
+    // Création de l'élément <a> pour le lien e-mail
+    var emailLink = document.createElement("a");
+    emailLink.href = "mailto:" + c;
+    emailLink.style.color = "#F8F9F6";
+    emailLink.style.textDecoration = "none";
+    emailLink.style.marginLeft = "10px";
+
+    // Création du texte à afficher dans le lien e-mail
+    var emailText = document.createTextNode(c);
+
+    // Ajout du texte à l'élément <a>
+    emailLink.appendChild(emailText);
+
+    // Ajout du lien e-mail à l'élément container
+    container.appendChild(emailLink);
 
 </script>
-
-    
-
-
-    
-
-    
 
 </body>
 </html>

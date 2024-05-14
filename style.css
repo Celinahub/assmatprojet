@@ -129,6 +129,15 @@ h2, h3 {
    color: #9786BD; /* Couleur pour l'effet hover */
 }
 
+
+.align-center {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
 /* Style des icônes svg des liens pied de page*/
 .icone-liens {
    max-height: 15px;
@@ -136,8 +145,12 @@ h2, h3 {
    margin-right: 5px;
 }
 
-
-
+/* Style des icônes svg des liens pied de page*/
+.love-letter {
+   max-height: 25px;
+   vertical-align: middle;
+   margin-right: 5px;
+}
 
 
 
@@ -2311,3 +2324,4 @@ position: relative; /* Ajout de position relative */
 .mentions-spacer {
    margin-bottom: 80px; /* Ajoutez de l'espace entre les éléments */
 }
+

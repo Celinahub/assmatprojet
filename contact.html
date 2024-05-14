@@ -46,7 +46,7 @@
     <nav class="navbar navbar-dark custom-navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
             <!-- Logo à gauche -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/navbar/logo-navbar-paint.png" alt="Céline Hubert logo ch" class="navbar-logo">
                 
             </a>
@@ -108,7 +108,7 @@
 <h2 class="heading-contact">Me contacter</h2>
 
         <!-- SVG qui doit être placé au-dessus de la carte -->
- <img src="images/contact/map-top.svg" class="map-top-curvy" alt="SVG Description">
+ <img src="images/contact/map-top.svg" class="map-top-curvy" alt="Décor nuages haut page">
         <!-- Contenu de la section -->
         <div class="row-contact justify-content-center align-items-center"> <!-- Centrer le contenu -->
             <div class="col-md-12-contact"> <!-- Largeur complète -->
@@ -121,12 +121,12 @@
                         <!-- Carte Leaflet -->
                         <div id="map"></div>
                         <!-- Image SVG -->
-                        <img src="images/contact/map-nuages.svg" class="map-curvy" alt="Description de votre image SVG">
+                        <img src="images/contact/map-nuages.svg" class="map-curvy" alt="Décor nuages carte">
                     </div>
                     
                  
                     <!-- Autres éléments de la section -->
-                    <img src="images/contact/me-contacter.svg" class="contact-curvy" alt="Description de votre image SVG">
+                    <img src="images/contact/me-contacter.svg" class="contact-curvy" alt="Décor nuages haut formulaire">
                     <!-- Contenu du formulaire -->
                     <div class="label-form section-wrapper">
                         <div class="contact-text">
@@ -162,7 +162,7 @@
                             
                         </div>
                     </div>
-                    <img src="images/contact/me-contacter-form.svg" class="contact-curvy" alt="Description de votre image SVG">
+                    <img src="images/contact/me-contacter-form.svg" class="contact-curvy" alt="Décor nuages bas du formulaire">
                 </div>
                 
             </div>
@@ -202,41 +202,44 @@
             </div>
             
             
-             <!-- Colonne du milieu: Liens utiles -->
-<div class="col-md-4 col-sm-12 text-center liens-utiles-typo">
-    <h5>Liens utiles</h5>
-    <ul class="list-unstyled">
-        <!-- Lien avec SVG aligné -->
-        <li>
-            <a href="index.html">
-                <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
-                Présentation
-            </a>
-        </li>
-        <li>
-            <a href="projet-accueil.html">
-                <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
-                Projet d'accueil
-            </a>
-        </li>
-        <li>
-            <a href="contact.html">
-                <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
-                Contact
-            </a>
-        </li>
-    </ul>
-    <!-- Espacement entre le titre et le paragraphe -->
-    <div class="pied-page-spacer"></div>
-    <ul class="list-unstyled">
-        <li>
-            <a href="mentions-legales.html">
-                <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
-                Mentions légales
-            </a>
-        </li>
-    </ul>
-</div>
+            <!-- Colonne du milieu: Liens utiles -->
+            <div class="col-md-4 col-sm-12 text-center liens-utiles-typo align-center">
+                <h5>Liens utiles</h5>
+                <ul class="list-unstyled">
+                    <!-- Lien avec SVG aligné -->
+                    <li>
+                        <a href="index.html">
+                            <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
+                            Présentation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projet-accueil.html">
+                            <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
+                            Projet d'accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" style="display: flex; align-items: center;">
+                            <!-- Icône -->
+                            <img src="images/pied-page/love-letter-svgrepo-com.svg" class="love-letter" alt="Arrow" style="margin-right: 5px;">
+                            <!-- Adresse e-mail -->
+                            <div id="emailContainer"></div>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- Espacement entre le titre et le paragraphe -->
+                <div class="pied-page-spacer"></div>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="mentions-legales.html">
+                            <span><img src="images/pied-page/arrow-pied-page-svgrepo-com.svg" class="icone-liens" alt="Arrow"></span>
+                            Mentions légales
+                        </a>
+                    </li>
+                </ul>
+            </div>
     
             
             
@@ -267,8 +270,13 @@
 <!-- Charger Leaflet -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> <!-- Charger sans defer -->
 
+
+
 <!-- Initialisation de la carte Leaflet -->
 <script>
+
+    // Script 1 carte
+
 	document.addEventListener('DOMContentLoaded', function() {
 		// Utiliser les nouvelles coordonnées pour centrer la carte
 		var lat = 48.607051477281715; // Latitude pour emplacement 
@@ -294,10 +302,41 @@
 			radius: 200        // Rayon du cercle en mètres
 		}).addTo(map);
 	});
+
+
+
+// Script 2 mail pied de page
+
+// Création de l'adresse e-mail
+var a = "chubert.assmat91";
+    var b = "yahoo.com";
+    var c = a + "@" + b;
+
+    // Sélection de l'élément où vous souhaitez ajouter le lien e-mail
+    var container = document.getElementById('emailContainer');
+
+    // Création de l'élément <a> pour le lien e-mail
+    var emailLink = document.createElement("a");
+    emailLink.href = "mailto:" + c;
+    emailLink.style.color = "#F8F9F6";
+    emailLink.style.textDecoration = "none";
+    emailLink.style.marginLeft = "10px";
+
+    // Création du texte à afficher dans le lien e-mail
+    var emailText = document.createTextNode(c);
+
+    // Ajout du texte à l'élément <a>
+    emailLink.appendChild(emailText);
+
+    // Ajout du lien e-mail à l'élément container
+    container.appendChild(emailLink);
+
+
+
 	</script>
 	
 	
-	
+
 <!-- Charger d'autres scripts avec defer pour qu'ils ne bloquent pas le rendu de la page -->
 <script src="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" defer></script>
