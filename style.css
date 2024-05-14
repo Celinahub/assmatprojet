@@ -112,6 +112,14 @@ h2, h3 {
    font-style: normal;
 }
 
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .pied-page-typo,
+   .liens-utiles-typo  {
+      font-size: 12px;
+   }
+ }
+
 /* Alignement du SVG avec le texte des liens */
 .liens-utiles-typo a span {
    vertical-align: middle; /* Aligne le SVG avec le texte */
