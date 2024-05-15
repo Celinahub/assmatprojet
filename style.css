@@ -508,13 +508,58 @@ h2, h3 {
 
 /* Page presentation.html */
 
-
-#presentation {
+/* Style pour la section "portrait" */
+#portrait {
+   
    background-color: #F8F9F6;
    position: relative;
    padding-top: 300px; /* Ajustez l'espacement en haut de la section pour accueillir l'image SVG */
    overflow: hidden; /* Cachez le débordement de l'image SVG */
+   padding-bottom: 80px; /* Hauteur de la bande de couleur */
 }
+
+/* Définition du style pour la bande de couleur en bas de la section */
+#portrait::after {
+   content: ''; /* Ajout de contenu avec la pseudo-classe ::after */
+   position: absolute; /* Position absolue */
+   bottom: 0; /* Alignement en bas */
+   left: 0; /* Alignement à gauche */
+   width: 100%; /* Largeur maximale */
+   height: 80px; /* Hauteur de la bande de couleur */
+   background-color: #98D1CA; /* Couleur de la bande de couleur */
+ 
+}
+
+
+#portrait .col-md-12 img.fond-curvy {
+   position: absolute;
+   width: 100%;
+   top: 100px;
+   left: 0;
+   right: 0;
+   margin: 0;
+   z-index: 0;
+}
+
+
+#portrait .fond-curvy {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: -1; /* Assurez-vous que l'image SVG est derrière le contenu */
+}
+
+
+#portrait {
+   background-color: #F8F9F6;
+   position: relative;
+   padding-top: 300px; /* Ajustez l'espacement en haut de la section pour accueillir l'image SVG */
+   overflow: hidden; /* Cachez le débordement de l'image SVG */
+   padding-bottom: 80px; /* Hauteur de la bande de couleur */
+}
+
+
 
 /* Dans votre fichier CSS */
 .heading-presentation {
@@ -523,83 +568,50 @@ h2, h3 {
 }
 
 
-#presentation .fond-curvy {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   z-index: -1; /* Assurez-vous que l'image SVG est derrière le contenu */
-}
-
-#presentation .bordered-content-profil-image {
-   
-   padding: 0px; /* Ajoutez un remplissage autour du contenu */
-}
 
 
-
-
-.profile-image {
-   position: relative;
-   z-index: 1;
-}
-/* Styles pour baisser la photo de profil vers le background svg fond nuages */
-@media (max-width: 768px) {
-   .profile-image {
-      top: 10%;
-    
-   }
-}
-
-/* Réduisez la taille de la photo de profil */
-.profile-image img {
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+.bordered-content-presentation-image .presentation-image img {
    max-width: 300px; /* Définissez la largeur maximale souhaitée */
    max-height: 300px; /* Définissez la hauteur maximale souhaitée */
    border-radius: 50%; /* Pour garder la forme ronde */
-}
-
-.profile-image img {
-   max-width: 100%;
-   height: auto; /* Pour conserver les proportions */
-}
-
-/* Ajoutez ce CSS dans votre feuille de style */
-.profile-image {
-   position: relative;
-   margin-bottom: 20px; /* Espace sous l'image */
-}
-
-
-.bubble-icon {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-
-
-.bordered-content-profil-image .profile-image img {
-   max-width: 100%;
-   height: auto; /* Pour conserver les proportions */
-   border-radius: 50%; /* Pour garder la forme ronde */
-   border: 1em solid #F8F9F6; /* Ajoute une bordure noire en haut du pied de page */
+   margin-top: 20px; /* Espace sur l'image */
+   margin-bottom: -50px; /* Espace sous l'image */
+   border: 1em solid #F8F9F6; /* Ajoute une bordure autour photos animation projet-accueil */
    
  }
 
 
-
-/* Styles pour positionner l'icône de bulle sur la photo de profil */
-.profile-image {
+/* Styles pour positionner l'icône de position sur la photo animée */
+.presentation-image {
    position: relative;
-   display: inline-block; /* Pour empêcher le débordement de l'icône de la bulle */
-   margin-bottom: 0px;
+   display: inline-block; /* Pour empêcher le débordement de l'icône position */
+   z-index: 1;
 }
+
+
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+@media (max-width: 768px) {
+   .bordered-content-presentation-image .presentation-image img {
+      max-width: 200px; /* Définissez la largeur maximale souhaitée */
+      max-height: 200px; /* Définissez la hauteur maximale souhaitée */
+      border-radius: 50%; /* Pour garder la forme ronde */
+      margin-top: 20px; /* Espace sur l'image */
+      margin-bottom: 0px; /* Espace sous l'image */
+      border: 0.7em solid #F9FAF7; /* Ajoute une bordure autour photos animation projet-accueil */
+      
+    }
+
+}
+
+
+
 
 /* Style de l'icône de bulle */
 .bubble-icon {
    position: absolute;
-   top: 20%; /* Position verticale centrée */
-   left: 90%; /* Position horizontale centrée */
+   top: 25%; /* Position verticale centrée */
+   left: 85%; /* Position horizontale centrée */
    transform: translate(-50%, -50%);
    font-size: 2rem; /* Réglez la taille de l'icône en fonction de vos préférences */
    color: #F17961; /* Couleur de l'icône par défaut */
@@ -618,26 +630,30 @@ h2, h3 {
    .bubble-icon {
        font-size: 1.5rem; /* Réduisez la taille de l'icône pour les écrans plus petits */
    }
-   
 }
 
-/* Styles pour rendre l'icône responsive */
 @media (max-width: 768px) {
-   /* Réduisez la taille de la photo de profil */
-.profile-image img {
-   max-width: 200px; /* Définissez la largeur maximale souhaitée */
-   max-height: 200px; /* Définissez la hauteur maximale souhaitée */
-   border-radius: 50%; /* Pour garder la forme ronde */
-}
-.bordered-content-profil-image .profile-image img {
-   max-width: 100%;
-   height: auto; /* Pour conserver les proportions */
-   border-radius: 50%; /* Pour garder la forme ronde */
-   border: 0.8em solid #F8F9F6; /* Ajoute une bordure autour photo de profil */
-   
- }
 
+   .bubble-icon {
+      font-size: 1.5rem; /* Réduisez la taille de l'icône pour les écrans plus petits */
+  }
+
+   /* Réduisez la taille de la photo de profil */
+   .profile-image img {
+      max-width: 200px; /* Définissez la largeur maximale souhaitée */
+      max-height: 200px; /* Définissez la hauteur maximale souhaitée */
+      border-radius: 50%; /* Pour garder la forme ronde */
+    
+   }
+   
+   .bordered-content-profil-image .profile-image img {
+      max-width: 100%;
+      height: auto; /* Pour conserver les proportions */
+      border-radius: 50%; /* Pour garder la forme ronde */
+      border: 0.8em solid #F8F9F6; /* Ajoute une bordure autour photo de profil */
+   }
 }
+
 
 
 /* CSS de base pour une animation de fade-in/fade-out de Céline assistante maternelle */
@@ -760,6 +776,7 @@ h2, h3 {
 #presentation-text {
    background: linear-gradient(to bottom, #98D1CA 5%, #F8F9F6 95%); /* Création du dégradé avec bande réglable */
    margin-bottom: 0; /* Corrige le margin-bottom négatif */
+  
 }
 
 
@@ -872,13 +889,48 @@ h2, h3 {
 /* Style pour la section "chezceline" */
 #chezceline {
    
-   background-color: #F8F9F6;
+   background: linear-gradient(to bottom, #F8F9F6 30%, #98D1CA 70%); /* Création du dégradé avec bande réglable */
    position: relative;
    padding-top: 300px; /* Ajustez l'espacement en haut de la section pour accueillir l'image SVG */
    overflow: hidden; /* Cachez le débordement de l'image SVG */
    padding-bottom: 80px; /* Hauteur de la bande de couleur */
 }
 
+
+
+
+
+/* Définition du style pour la bande de couleur en bas de la section */
+#chezceline::after {
+   content: ''; /* Ajout de contenu avec la pseudo-classe ::after */
+   position: absolute; /* Position absolue */
+   bottom: 0; /* Alignement en bas */
+   left: 0; /* Alignement à gauche */
+   width: 100%; /* Largeur maximale */
+   height: 80px; /* Hauteur de la bande de couleur */
+   background-color: #98D1CA; /* Couleur de la bande de couleur */
+ 
+}
+
+
+#chezceline .col-md-12 img.fond-curvy {
+   position: absolute;
+   width: 100%;
+   top: 100px;
+   left: 0;
+   right: 0;
+   margin: 0;
+   z-index: 1;
+}
+
+
+#chezceline .fond-curvy {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: -1; /* Assurez-vous que l'image SVG est derrière le contenu */
+}
 
 /* Dans votre fichier CSS */
 .heading-chezceline {
@@ -895,19 +947,6 @@ h2, h3 {
    padding-right: 20px; /* Ajoutez une marge de 20px à droite */
    padding-bottom: 40px; /* Ajoutez une marge de 20px en bas */
    
-}
-
-
-/* Définition du style pour la bande de couleur en bas de la section */
-#chezceline::after {
-   content: ''; /* Ajout de contenu avec la pseudo-classe ::after */
-   position: absolute; /* Position absolue */
-   bottom: 0; /* Alignement en bas */
-   left: 0; /* Alignement à gauche */
-   width: 100%; /* Largeur maximale */
-   height: 80px; /* Hauteur de la bande de couleur */
-   background-color: #98D1CA; /* Couleur de la bande de couleur */
- 
 }
 
 /* Style de l'icône position */
@@ -940,25 +979,6 @@ picture img {
    height: auto;
 }
 
-
-#chezceline .col-md-12 img.fond-curvy {
-   position: absolute;
-   width: 100%;
-   top: 100px;
-   left: 0;
-   right: 0;
-   margin: 0;
-   z-index: 1;
-}
-
-
-#chezceline .fond-curvy {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   z-index: -1; /* Assurez-vous que l'image SVG est derrière le contenu */
-}
 
 
 
