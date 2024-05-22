@@ -46,6 +46,15 @@ h2, h3 {
   
 }
 
+.heart-icon {
+   width: 0.8rem; /* Ajustez la taille du SVG */
+   height: 0.8rem; 
+   
+ }
+
+
+
+
 /* Style de la section bordure rayée au dessus du pied de page */
 .striped-section {
    height: 5px; /* Ajustez la hauteur selon vos besoins */
