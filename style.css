@@ -898,16 +898,13 @@ h2, h3 {
 /* Style pour la section "chezceline" */
 #chezceline {
    
-   background: linear-gradient(to bottom, #F8F9F6 30%, #98D1CA 70%); /* Création du dégradé avec bande réglable */
-   position: relative;
+   background: #F8F9F6; /* Création du dégradé avec bande réglable */
+   position: relative; /* Nécessaire pour l'alignement des pseudo-éléments */
    padding-top: 300px; /* Ajustez l'espacement en haut de la section pour accueillir l'image SVG */
    overflow: hidden; /* Cachez le débordement de l'image SVG */
    padding-bottom: 80px; /* Hauteur de la bande de couleur */
+
 }
-
-
-
-
 
 /* Définition du style pour la bande de couleur en bas de la section */
 #chezceline::after {
@@ -940,6 +937,8 @@ h2, h3 {
    width: 100%;
    z-index: -1; /* Assurez-vous que l'image SVG est derrière le contenu */
 }
+
+
 
 /* Dans votre fichier CSS */
 .heading-chezceline {
