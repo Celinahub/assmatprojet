@@ -1559,35 +1559,30 @@
 
 // Script 1 mail image animée domicile 
 
-// Attend que le DOM soit entièrement chargé avant d'exécuter le code
-document.addEventListener("DOMContentLoaded", function() {
-    const animationFrames = document.querySelectorAll(".animation-frame");
-    let currentFrameIndex = 0;
+    // Attend que le DOM soit entièrement chargé avant d'exécuter le code
+    document.addEventListener("DOMContentLoaded", function() {
+        const animationFrames = document.querySelectorAll(".animation-frame");
+        let currentFrameIndex = 0;
 
-    // Vérifie si des éléments .animation-frame ont été trouvés
-    if (animationFrames.length === 0) {
-        console.error("Aucun élément .animation-frame trouvé.");
-        return; // Arrête l'exécution du script
-    }
+        // Vérifie si des éléments .animation-frame ont été trouvés
+        if (animationFrames.length === 0) {
+            console.error("Aucun élément .animation-frame trouvé.");
+            return; // Arrête l'exécution du script
+        }
 
-    // Cacher toutes les images sauf la première
-    for (let i = 1; i < animationFrames.length; i++) {
-        animationFrames[i].style.display = "none";
-    }
+        function changeImage() {
+            animationFrames[currentFrameIndex].classList.add("hidden");
+            currentFrameIndex = (currentFrameIndex + 1) % animationFrames.length;
+            animationFrames[currentFrameIndex].classList.remove("hidden");
+        }
 
-    function changeImage() {
-        animationFrames[currentFrameIndex].style.display = "none";
-        currentFrameIndex = (currentFrameIndex + 1) % animationFrames.length;
-        animationFrames[currentFrameIndex].style.display = "block";
-    }
+        function startAnimation() {
+            changeImage();
+            setInterval(changeImage, 1000); // Change d'image toutes les secondes
+        }
 
-    function startAnimation() {
-        changeImage();
-        setInterval(changeImage, 1000); // Change d'image toutes les secondes
-    }
-
-    startAnimation();
-});
+        startAnimation();
+    });
 
 
 
