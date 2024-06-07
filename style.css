@@ -578,6 +578,29 @@ h2, h3 {
 
 
 
+.fond-uni {
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 95%; /* Ajustez la largeur maximale pour éviter le débordement */
+   height: 100%; /* Ajustez la hauteur maximale pour éviter le débordement */
+   background-color: #98D1CA; /* Couleur de fond pour le fond uni */
+   border-radius: 50%; /* Pour garder la forme ronde */
+   z-index: -1; /* Assurez-vous que le fond uni est au-dessus de l'image SVG */
+}
+
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+@media (max-width: 768px) {
+   .fond-uni {
+   top: 65%;
+   left: 50%;
+   width: 95%; /* Ajustez la largeur maximale pour éviter le débordement */
+   height: 105%; /* Ajustez la hauteur maximale pour éviter le débordement */
+    }
+
+}
+
 
 /* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
 .bordered-content-presentation-image .presentation-image img {
@@ -974,6 +997,10 @@ h2, h3 {
    }
 }
 
+/* Pour que l'animation fonctionne */
+.hidden {
+   display: none;
+}
 
 /* Appliquez la largeur et la hauteur aux images dans un <picture> */
 picture img {
@@ -1595,9 +1622,6 @@ position: relative; /* Ajout de position relative */
 }
 
 
-.hidden {
-    display: none;
-}
 
 
 
@@ -2360,4 +2384,6 @@ position: relative; /* Ajout de position relative */
 .mentions-spacer {
    margin-bottom: 80px; /* Ajoutez de l'espace entre les éléments */
 }
+
+
 
