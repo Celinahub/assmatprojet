@@ -264,12 +264,24 @@ h2, h3 {
 
 }
 
-/* Style du titre de la section contact */
-.heading-contact {
-   color: #96D2CA; /* Changez la couleur selon votre préférence */
-   font-size: 1px;
+
+.header-main-contact {
+   background-color: #96D2CA;
+   padding: 20px;
+   text-align: center;
 }
 
+.heading-main-contact {
+   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   color: #96D2CA;
+   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+}
+
+.heading-contact {
+   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   color: #96D2CA;
+   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+}
 
 /* Style pour la section de contact pour éviter les espaces indésirables */
 .contact-section {
@@ -569,8 +581,26 @@ h2, h3 {
 }
 
 
+.header-main {
+   background-color: #F9FAF7;
+   color: #F9FAF7;
+   font-size: 1px;
+   padding: 20px; /* Facultatif : ajoutez du padding pour un meilleur espacement */
+   text-align: center; /* Facultatif : centre le texte à l'intérieur du header */
+}
+.heading-main {
+   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   color: #F9FAF7;
+   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+}
 
-/* Dans votre fichier CSS */
+
+.heading-portrait {
+   color: #F9FAF7; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
+
+
 .heading-presentation {
    color: #F9FAF7; /* Changez la couleur selon votre préférence */
    font-size: 1px;
@@ -941,6 +971,11 @@ h2, h3 {
  
 }
 
+.heading-chezceline {
+   color: #F9FAF7; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
+
 
 #chezceline .col-md-12 img.fond-curvy {
    position: absolute;
@@ -1071,10 +1106,11 @@ picture img {
    font-weight: 700;
    font-style: normal;
    color: #103653;
-   font-size: 1.2em; /* Taille de la police relative */
+   font-size: 1.5em; /* Taille de la police relative */
    margin-bottom: 10px; /* Marge en bas du titre */
 
 }
+
 
 
 /* Styles spécifiques le titre "BIENVENUE chez Céline" */
@@ -1107,16 +1143,7 @@ picture img {
    position: relative; /* Ajout de position relative */
 }
 
-/* Styles spécifiques des titres section role BIENVENUE */
-.poppins-bold-role-title {
-   font-family: "Poppins", sans-serif;
-   font-weight: 700;
-   font-style: normal;
-   color: #103754;
-   font-size: 1.2em; /* Taille de la police relative */
-   margin-bottom: 10px; /* Marge en bas du titre */
 
-}
 
 
 
@@ -1169,10 +1196,12 @@ font-family: "Poppins", sans-serif;
 font-weight: 700;
 font-style: normal;
 color: #103653;
-font-size: 1.2em; /* Taille de la police relative */
+font-size: 1.5em; /* Taille de la police relative */
 margin-bottom: 10px; /* Marge en bas du titre */
 
 }
+
+
 
 
 /* Styles spécifiques le titre "LA SECURITE en priorité" */
@@ -1205,16 +1234,7 @@ font-size: 1em;
 position: relative; /* Ajout de position relative */
 }
 
-/* Styles spécifiques des titres section role */
-.poppins-bold-securite-title {
-font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-style: normal;
-color: #103754;
-font-size: 1.2em; /* Taille de la police relative */
-margin-bottom: 10px; /* Marge en bas du titre */
 
-}
 
 /* Styles spécifiques pour l'espace entre les titres "Routine" et "Dejeuner" et le texte */
 .canaille-spacer {
@@ -1391,7 +1411,7 @@ position: relative; /* Ajout de position relative */
    font-weight: 700;
    font-style: normal;
    color: #F8F9F6;
-   font-size: 1.2em; /* Taille de la police relative */
+   font-size: 1.5em; /* Taille de la police relative */
    margin-bottom: 50px; /* Marge en bas du titre */
 
 }
@@ -1450,7 +1470,7 @@ position: relative; /* Ajout de position relative */
    font-weight: 700;
    font-style: normal;
    color: #103754;
-   font-size: 1.2em; /* Taille de la police relative */
+   font-size: 1.5em; /* Taille de la police relative */
    margin-bottom: 50px; /* Marge en bas du titre */
 
 }
@@ -1640,10 +1660,12 @@ position: relative; /* Ajout de position relative */
    font-weight: 700;
    font-style: normal;
    color: #103754;
-   font-size: 1.2em; /* Taille de la police relative */
+   font-size: 1.5em; /* Taille de la police relative */
    margin-bottom: 50px; /* Marge en bas du titre */
 
 }
+
+
 
 /* Styles spécifiques le titre "COLLABORATEURS mes partenaires pour un accueil de qualité" */
 .title-container {
@@ -1677,14 +1699,7 @@ position: relative; /* Ajout de position relative */
 
 
 
-.poppins-bold-team-title {
-   font-family: "Poppins", sans-serif;
-   font-weight: 700;
-   font-style: normal;
-   color: #103754;
-   font-size: 1.2em; /* Taille de la police relative */
-   margin-bottom: 50px; /* Marge en bas du titre */
-}
+
 
 /* Styles spécifiques pour le texte descriptif collaborateurs */
 .poppins-team-text {
@@ -1862,7 +1877,7 @@ position: relative; /* Ajout de position relative */
    font-weight: 700;
    font-style: normal;
    color: #103754;
-   font-size: 1.2em; /* Taille de la police relative */
+   font-size: 1.5em; /* Taille de la police relative */
    margin-bottom: 50px; /* Marge en bas du titre */
 
 }
@@ -2148,7 +2163,7 @@ position: relative; /* Ajout de position relative */
    font-weight: 700;
    font-style: normal;
    color: #103754;
-   font-size: 1.2em; /* Taille de la police relative */
+   font-size: 1.5em; /* Taille de la police relative */
    margin-bottom: 50px; /* Marge en bas du titre */
 
 }
@@ -2350,7 +2365,17 @@ position: relative; /* Ajout de position relative */
    margin-bottom: 0; /* Corrige le margin-bottom négatif */
 }
 
+.header-main-mentions {
+   background-color: #96D2CA;
+   padding: 20px;
+   text-align: center;
+}
 
+.heading-main-mentions {
+   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   color: #96D2CA;
+   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+}
 
 /* Dans votre fichier CSS */
 .heading-mentions-legales {
