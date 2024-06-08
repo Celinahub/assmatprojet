@@ -582,27 +582,27 @@ h2, h3 {
 
 
 .header-main {
-   background-color: #F9FAF7;
-   color: #F9FAF7;
+   background-color: #F8F9F6;
+   color: #F8F9F6;
    font-size: 1px;
    padding: 20px; /* Facultatif : ajoutez du padding pour un meilleur espacement */
    text-align: center; /* Facultatif : centre le texte à l'intérieur du header */
 }
 .heading-main {
    font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
-   color: #F9FAF7;
+   color: #F8F9F6;
    margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
 }
 
 
 .heading-portrait {
-   color: #F9FAF7; /* Changez la couleur selon votre préférence */
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
    font-size: 1px;
 }
 
 
 .heading-presentation {
-   color: #F9FAF7; /* Changez la couleur selon votre préférence */
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
    font-size: 1px;
 }
 
@@ -972,7 +972,7 @@ h2, h3 {
 }
 
 .heading-chezceline {
-   color: #F9FAF7; /* Changez la couleur selon votre préférence */
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
    font-size: 1px;
 }
 
