@@ -267,15 +267,20 @@ h2, h3 {
 
 .header-main-contact {
    background-color: #96D2CA;
-   padding: 20px;
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
    text-align: center;
 }
 
 .heading-main-contact {
-   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
    color: #96D2CA;
-   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+   margin: 0; /* Supprimez les marges verticales */
+   
 }
+
+
+
+
 
 .heading-contact {
    font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
@@ -583,16 +588,17 @@ h2, h3 {
 
 .header-main {
    background-color: #F8F9F6;
-   color: #F8F9F6;
-   font-size: 1px;
-   padding: 20px; /* Facultatif : ajoutez du padding pour un meilleur espacement */
-   text-align: center; /* Facultatif : centre le texte à l'intérieur du header */
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
+   text-align: center;
 }
+
 .heading-main {
-   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
    color: #F8F9F6;
-   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+   margin: 0; /* Supprimez les marges verticales */
+   
 }
+
 
 
 .heading-portrait {
@@ -2365,17 +2371,20 @@ position: relative; /* Ajout de position relative */
    margin-bottom: 0; /* Corrige le margin-bottom négatif */
 }
 
+
 .header-main-mentions {
    background-color: #96D2CA;
-   padding: 20px;
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
    text-align: center;
 }
 
 .heading-main-mentions {
-   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
    color: #96D2CA;
-   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+   margin: 0; /* Supprimez les marges verticales */
+   
 }
+
 
 /* Dans votre fichier CSS */
 .heading-mentions-legales {
