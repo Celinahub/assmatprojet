@@ -1157,7 +1157,6 @@ picture img {
    
    display: flex;
    flex-direction: column;
-   align-items: left;
    text-align: left;
    padding: 0; /* Supprimer tout rembourrage */
    margin-bottom: 0px; /* Espacement entre les éléments */
@@ -1297,7 +1296,6 @@ position: relative; /* Ajout de position relative */
    
    display: flex;
    flex-direction: column;
-   align-items: left;
    text-align: left;
    padding: 0; /* Supprimer tout rembourrage */
    margin-bottom: 20px; /* Espacement entre les éléments */
@@ -1457,7 +1455,6 @@ position: relative; /* Ajout de position relative */
    font-family: "Poppins", sans-serif;
    font-weight: 400;
    font-size: 14px;
-   font-style: bold;
    color: #F8F9F6;
  }
 
