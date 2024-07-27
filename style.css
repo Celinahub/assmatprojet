@@ -53,8 +53,6 @@ h2, h3 {
  }
 
 
-
-
 /* Style de la section bordure rayée au dessus du pied de page */
 .striped-section {
    height: 5px; /* Ajustez la hauteur selon vos besoins */
@@ -83,7 +81,7 @@ h2, h3 {
 
 /* Styles spécifiques pour l'espace entre les liens PIED DE PAGE */
 .pied-page-spacer {
-   margin-bottom: 40px; /* Ajoutez de l'espace entre les éléments */
+   margin-bottom: 10px; /* Ajoutez de l'espace entre les éléments */
 }
 
 /* Classe pour les horaires d'accueil */
@@ -169,10 +167,21 @@ h2, h3 {
    margin-right: 5px;
 }
 
+/* Style des icônes svg des liens pied de page*/
+.social-icons {
+   width: 40px; /* Taille de l'icône */
+   margin-right: 10px; /* Espacement entre l'icône et le texte */
+   vertical-align: middle; /* Alignement vertical */
+}
 
 
+ /* Styles pour la ligne horizontale de séparation de la faq */
+.pied-page-separator {
+   border: none; /* Remove the default border */
+   border-top: 2px solid #F8F9F6; /* Add a top border with the desired color and thickness */
+   margin: 20px 0; /* Optional: Add some margin for spacing */
+ }
 
- /* Styles pour le menu déroulant */
 
   /* Styles pour le menu déroulant */
  .custom-navbar {
@@ -252,16 +261,11 @@ h2, h3 {
 
 
 
-
-
 /* Page contact.html */
 
-
-/* Style pour la page contact.html */
 #contact {
    background-color: #96D2CA;
  
-
 }
 
 
@@ -277,9 +281,6 @@ h2, h3 {
    margin: 0; /* Supprimez les marges verticales */
    
 }
-
-
-
 
 
 .heading-contact {
@@ -383,7 +384,6 @@ h2, h3 {
    padding: 20px;
    text-align: left; /* Alignement à gauche */
  
-   
 }
 
 
@@ -839,8 +839,6 @@ h2, h3 {
 
 /* Page presentation-text.html */
 
-
-
 #presentation-text {
    background: linear-gradient(to bottom, #98D1CA 5%, #F8F9F6 95%); /* Création du dégradé avec bande réglable */
    margin-bottom: 0; /* Corrige le margin-bottom négatif */
@@ -952,7 +950,6 @@ h2, h3 {
 
 
 /* Style pour la page projet-accueil.html */
-
 
 /* Style pour la section "chezceline" */
 #chezceline {
@@ -1150,9 +1147,6 @@ picture img {
 }
 
 
-
-
-
 .role-item {
    
    display: flex;
@@ -1205,7 +1199,6 @@ font-size: 1.5em; /* Taille de la police relative */
 margin-bottom: 10px; /* Marge en bas du titre */
 
 }
-
 
 
 
@@ -2359,6 +2352,7 @@ position: relative; /* Ajout de position relative */
 
 
 
+
 /* Page mentions-legales.html */
 
 
@@ -2418,3 +2412,447 @@ position: relative; /* Ajout de position relative */
 
 
 
+
+
+
+/* Page FAQ.html */
+
+/* Style pour la section "faq" */
+#faq {
+   background: linear-gradient(to bottom, #98D1CA 5%, #F8F9F6 95%); /* Création du dégradé avec bande réglable */
+   margin-bottom: 0; /* Corrige le margin-bottom négatif */
+}
+
+
+.faq-section {
+   padding: 100px;
+}
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .faq-section {
+      padding: 20px;
+   }
+ }
+
+
+ .faq-bottom-curvy {
+   width: 100%; /* Utiliser 100% pour couvrir toute la largeur du conteneur parent */
+   height: auto; /* Assurer que le SVG garde ses proportions */
+   margin: 0; /* Pas de marge supplémentaire */
+   padding: 0; /* Pas de remplissage supplémentaire */
+   display: block; /* S'assurer que le SVG s'affiche comme un bloc */
+}
+
+
+/* Assure que le SVG s'étend sur toute la largeur et reste en arrière-plan */
+.fond-curvy-faq {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: auto;
+   z-index: -1;
+}
+
+
+/* Cacher l'image mobile par défaut */
+.mobile-image {
+   display: none;
+}
+
+/* Afficher l'image de bureau par défaut */
+.desktop-image {
+   display: block;
+}
+
+/* Cacher l'image de bureau sur les écrans mobiles */
+@media (max-width: 768px) {
+   .desktop-image {
+       display: none;
+   }
+
+   .mobile-image {
+       display: block;
+       
+   }
+}
+
+
+
+/* Styles spécifiques le titre "VOS QUESTIONS" */
+.poppins-bold-faq-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103653;
+   font-size: 1.2em; /* Taille de la police relative */
+   margin-bottom: 10px; /* Marge en bas du titre */
+
+}
+
+
+ /* Animation de fondu pour "nos réponses" */
+ @keyframes fadeInOutfaq {
+   0%, 100% {
+       opacity: 0;
+   }
+   25%, 75% {
+       opacity: 1;
+   }
+}
+
+/* Appliquer l'animation "nos réponses" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-faq {
+   animation: fadeInOutfaq 8s infinite;
+   color: #F8F9F6; /* Couleur du texte souhaitée */
+   display: inline-block; /* Maintient sur la même ligne */
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+}
+
+
+/* Cachez initialement la description faq */
+.faq-description {
+   display: none;
+}
+
+
+/* Styles pour les boutons découvrir rubrique faq + et - */
+.btn-toggle {
+   background-color: transparent; /* Assure un arrière-plan transparent */
+   color: #103754;
+   border: none;
+   cursor: pointer;
+}
+
+.btn-toggle:hover {
+   background-color: transparent; /* Assure un arrière-plan transparent */
+}
+
+
+/* Style spécifique pour les images les émotions dans la section faq" */
+.faq-list {
+   list-style-type: none;
+   padding: 0;
+}
+
+/* Style spécifique pour les marges des images les émotions dans la section faq" */
+.faq-image {
+   margin-bottom: 5px; /* Réduire l'espacement vertical entre les images */
+}
+
+.row.text-center.my-4 {
+   margin-right: -30px;
+   margin-left: -30px;
+}
+
+.row.text-center.my-4 > [class*='col-'] {
+   padding-right: 5px;
+   padding-left: 5px;
+}
+
+/* Marges spécifiques pour les écrans plus petits */
+@media (max-width: 767px) { /* Taille d'écran mobile */
+   .row.text-center.my-4 {
+       margin-right: 0;
+       margin-left: 0;
+   }
+   
+   .row.text-center.my-4 > [class*='col-'] {
+       padding-right: 10px;
+       padding-left: 10px;
+   }
+   
+   .faq-image {
+       margin-bottom: 10px; /* Augmenter l'espacement vertical entre les images pour les petits écrans */
+   }
+}
+
+
+
+/* Styles pour le fond des rubriques questions de la faq */
+.faq-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: transparent; /* Assure un arrière-plan transparent */
+   padding: 0px;
+   border-radius: 5px;
+   margin-bottom: 0px;
+}
+
+/* Styles pour le fond du texte caché de la faq */
+.faq-description {
+   display: none;
+   background-color: rgba(255, 255, 255, 0.3); /* Fond blanc transparent */
+   color: #40413E;
+   padding: 10px;
+   border-radius: 5px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 14px;
+}
+
+/* Ajoutez des styles spécifiques pour les écrans plus petits (par exemple, largeur inférieure à 768px) */
+@media (max-width: 768px) {
+   .faq-description {
+      font-size: 12px;
+   }
+}
+
+/* Styles pour la typo du texte caché de la faq */
+.add-space-bottom-faq {
+   margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #40413E;
+   font-size: 14px;
+}
+
+.poppins-faq-hidden {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #40413E;
+   font-size: 14px;
+ }
+
+/* Ajoutez des styles spécifiques pour les écrans plus petits (par exemple, largeur inférieure à 768px) */
+@media (max-width: 768px) {
+   .add-space-bottom-faq,
+   .poppins-faq-hidden {
+      font-size: 12px;
+   }
+}
+
+
+
+/* Styles pour la taille les icônes dans les pictogrammes */
+.icon-container img {
+   width: 50px; /* Largeur de l'icône */
+   height: 50px; /* Hauteur de l'icône */
+}
+
+
+
+/* Styles pour les titres des pictogrammes */
+.faq-keyword {
+   margin-bottom: 5px; /* Espacement entre le texte et l'icône */
+   background-color: transparent;
+   color: #103754;
+   padding: 5px;
+   font-size: 10px;
+   cursor: pointer;
+}
+
+
+/* Styles pour les pictogrammes */
+.faq-keyword-container {
+   display: flex;
+   flex-direction: column; /* Arrange le texte au-dessus de l'icône */
+   align-items: center;
+   margin-right: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   width: 120px; /* Largeur fixe pour maintenir la forme carrée */
+   height: 120px; /* Hauteur fixe pour maintenir la forme carrée */
+   border: 3px solid #103754; /* Bordure autour du conteneur */
+   background-color: #F8F9F6; /* Fond blanc */
+   border-radius: 5px; /* Coins arrondis */
+}
+
+/* Styles pour centrer les icônes dans les pictogrammes */
+.faq-keyword-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px;
+   flex: 1; /* Pour que le texte soit centré verticalement */
+}
+
+
+
+/* Ajoutez des styles spécifiques pour les écrans plus petits (par exemple, largeur inférieure à 768px) */
+@media (max-width: 768px) {
+   .faq-keyword {
+      font-size: 8px;
+   }
+
+   .faq-keywords {
+      flex-direction: column; /* Pour placer les routine-keyword les uns sous les autres */
+      align-items: flex-start; /* Pour centrer les routine-keyword horizontalement */
+  }
+}
+
+
+
+.checked-demarches {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 1.5rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+ }
+
+ .checked-legislation {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 2rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+ }
+
+ .checked-salaire {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 2rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+ }
+
+ .checked-ampoule {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 2rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+ }
+
+ .checked-stop {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 3rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+ }
+
+ .checked-important {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 1.5rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+ }
+
+ .checked-money {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 1.5rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+ }
+
+
+/* Styles pour la ligne horizontale de séparation de la faq */
+.faq-separator {
+  border: none; /* Remove the default border */
+  border-top: 2px solid #103754; /* Add a top border with the desired color and thickness */
+  margin: 20px 0; /* Optional: Add some margin for spacing */
+}
+
+/* Styles pour l'espace entre le texte de présentation et le reste du contenu de la faq */
+.faq-text {
+  margin-top: 20px;  /* Adjust the value as needed */
+  margin-bottom: 80px;  /* Adjust the value as needed */
+}
+
+/* Styles pour le texte de présentation de la faq */
+.poppins-regular-faq {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: #103754;
+  margin-top: 20px;
+}
+
+
+
+
+/* Styles pour aligner horizontalement sur les écrans de bureau */
+.faq-keywords {
+   display: flex;
+   flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+   justify-content: flex-start; /* Pour aligner les éléments à gauche */
+   
+}
+
+/* Styles pour les liens de la faq */
+.styled-link {
+   font-weight: bold;
+   color: #103754;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.styled-link:hover {
+   text-decoration: underline;
+}
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .styled-link  {
+      font-size: 12px;
+   }
+ }
+
+
+/* Styles pour les liens de la faq */
+.styled-link-sites {
+   font-weight: bold;
+   color: #103754;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.styled-link-sites:hover {
+   text-decoration: underline;
+}
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .styled-link-sites  {
+      font-size: 10px;
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
