@@ -84,15 +84,7 @@ h2, h3 {
    margin-bottom: 10px; /* Ajoutez de l'espace entre les éléments */
 }
 
-/* Classe pour les horaires d'accueil */
-.pied-page-typo {
-   color: #F8F9F6; 
-   text-align: center; /* Pour garder le texte centré */
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 14px;
-   font-style: normal;
-}
+
 
 /* Style pour les horaires d'accueil*/
 .liens-utiles-typo h5 {
@@ -107,7 +99,15 @@ h2, h3 {
    margin-top: -10px; /* Réduit l'espace entre les paragraphes */
 }
 
-
+/* Classe pour les horaires d'accueil */
+.pied-page-typo {
+   color: #F8F9F6; 
+   text-align: center; /* Pour garder le texte centré */
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+   font-style: normal;
+}
 
 /* Classe pour les liens utiles */
 .liens-utiles-typo {
@@ -115,17 +115,12 @@ h2, h3 {
    text-align: center; /* Pour garder le texte centré */
    font-family: "Poppins", sans-serif;
    font-weight: 400;
-   font-size: 14px;
+   font-size: 12px;
    font-style: normal;
 }
 
-/* Media query pour écrans plus petits */
-@media (max-width: 768px) {
-   .pied-page-typo,
-   .liens-utiles-typo  {
-      font-size: 12px;
-   }
- }
+
+
 
 /* Alignement du SVG avec le texte des liens */
 .liens-utiles-typo a span {
@@ -212,6 +207,8 @@ h2, h3 {
    margin-right: 0px; /* Ajoutez un espacement entre le logo et le texte */
 }
  
+
+
 
 
 /* Style de l'icône de flèche vers le haut */
