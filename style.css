@@ -682,10 +682,12 @@ h2, h3 {
 /* Styles pour rendre l'icône responsive */
 @media (max-width: 768px) {
    .bubble-icon svg {
-       width: 2.5em; /* Réduisez la taille de l'icône pour les écrans plus petits */
-       height: 2.5em;
+       width: 2em; /* Réduisez la taille de l'icône pour les écrans plus petits */
+       height: 2em;
    }
 }
+
+
 
 
 @media (max-width: 768px) {
