@@ -936,6 +936,23 @@ h2, h3 {
    width: 4.5rem; /* Ajustez la taille du SVG */
  }
  
+ .styled-link-presentation {
+   font-weight: bold;
+   color: #103754;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.styled-link-presentation:hover {
+   text-decoration: underline;
+}
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .styled-link-presentation  {
+      font-size: 14px;
+   }
+}
 
 
 
