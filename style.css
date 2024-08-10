@@ -670,8 +670,10 @@ h2, h3 {
 }
 
 
+
+
 /* Style de l'icône position */
-.bubble-icon {
+.position-icon-b {
    position: absolute;
    top: 30%; /* Position verticale centrée */
    left: 90%; /* Position horizontale centrée */
@@ -681,11 +683,13 @@ h2, h3 {
 
 /* Styles pour rendre l'icône responsive */
 @media (max-width: 768px) {
-   .bubble-icon svg {
-       width: 2em; /* Réduisez la taille de l'icône pour les écrans plus petits */
-       height: 2em;
+   .position-icon-b svg {
+       width: 2.5em; /* Réduisez la taille de l'icône pour les écrans plus petits */
+       height: 2.5em;
    }
 }
+
+
 
 
 
