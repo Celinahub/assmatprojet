@@ -93,10 +93,12 @@ h2, h3 {
 
 
 /* Style pour les horaires d'accueil*/
+.liens-utiles-typo h3,
 .liens-utiles-typo h4 {
    margin-bottom: 25px; /* Augmente l'espace sous le titre */
 }
 
+.pied-page-typo h3,
 .pied-page-typo h4 {
    margin-bottom: 35px; /* Augmente l'espace sous le titre */
 }
