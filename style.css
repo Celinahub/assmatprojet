@@ -37,14 +37,20 @@ h2, h3 {
 }
 
 /* Style du pied de page */
+.faq-footer-section,
 .custom-footer-section {
    padding: 20px; /* Remplissage interne de la section */
    position: relative; 
    width: 100%; 
    background: #143854; /* Couleur de fond du pied de page */
-
-  
 }
+
+.titre-footer {
+   color: #143854; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
+
+
 
 .heart-icon {
    width: 0.8rem; /* Ajustez la taille du SVG */
