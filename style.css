@@ -37,11 +37,7 @@ h2, h3 {
 }
 
 /* Style du pied de page */
-.index-footer-section,
-.projet-footer-section,
-.faq-footer-section,
-.contact-footer-section,
-.legales-footer-section {
+.custom-footer-section {
    padding: 20px; /* Remplissage interne de la section */
    position: relative; 
    width: 100%; 
@@ -49,13 +45,6 @@ h2, h3 {
 
   
 }
-
-.titre-footer {
-   color: #143854; /* Changez la couleur selon votre préférence */
-   font-size: 1px;
-}
-
-
 
 .heart-icon {
    width: 0.8rem; /* Ajustez la taille du SVG */
@@ -98,14 +87,12 @@ h2, h3 {
 
 
 /* Style pour les horaires d'accueil*/
-.liens-utiles-typo h3 {
+.liens-utiles-typo h4 {
    margin-bottom: 25px; /* Augmente l'espace sous le titre */
-   font-size: 20px; /* typo horaires */
 }
 
-.pied-page-typo h3 {
+.pied-page-typo h4 {
    margin-bottom: 35px; /* Augmente l'espace sous le titre */
-   font-size: 20px; /* typo liens utiles et reeseaux sociaux */
 }
 
 .pied-page-typo p {
@@ -544,17 +531,6 @@ h2, h3 {
 
 /* Page presentation.html */
 
-
-
-
-
-
-
-
-
-
-
-
 /* Style pour la section "portrait" */
 #portrait {
    
@@ -573,13 +549,8 @@ h2, h3 {
    left: 0; /* Alignement à gauche */
    width: 100%; /* Largeur maximale */
    height: 80px; /* Hauteur de la bande de couleur */
-   background-color: #103653; /* Couleur de la bande de couleur */
-   z-index: -2; /* Assurez-vous que l'image SVG est derrière le contenu */
-}
-
-.heading-presentation {
-   color: #F8F9F6; /* Changez la couleur selon votre préférence */
-   font-size: 1px;
+   background-color: #98D1CA; /* Couleur de la bande de couleur */
+ 
 }
 
 
@@ -590,7 +561,7 @@ h2, h3 {
    left: 0;
    right: 0;
    margin: 0;
-   z-index: 1;
+   z-index: 0;
 }
 
 
@@ -612,12 +583,31 @@ h2, h3 {
 }
 
 
+.header-main {
+   background-color: #F8F9F6;
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
+   text-align: center;
+}
+
+.heading-main {
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
+   color: #F8F9F6;
+   margin: 0; /* Supprimez les marges verticales */
+   
+}
 
 
 
+.heading-portrait {
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
 
 
-
+.heading-presentation {
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
 
 
 
@@ -652,7 +642,7 @@ h2, h3 {
    border-radius: 50%; /* Pour garder la forme ronde */
    margin-top: 20px; /* Espace sur l'image */
    margin-bottom: -50px; /* Espace sous l'image */
-   border: 0.5em solid #F8F9F6; /* Ajoute une bordure autour photos animation projet-accueil */
+   border: 1em solid #F8F9F6; /* Ajoute une bordure autour photos animation projet-accueil */
    
  }
 
@@ -901,6 +891,13 @@ h2, h3 {
   
 }
 
+.poppins-regular {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #103754;
+ }
 
 
 .checked {
@@ -1012,7 +1009,10 @@ h2, h3 {
 
 
 
-
+/* Dans votre fichier CSS */
+.heading-chezceline {
+   color: #F9FAF7; /* Changez la couleur selon votre préférence */
+}
 
 /* Ajoutez une marge intérieure à la sections de la page projet-accueil.html */
 .valeur-section,
@@ -1096,16 +1096,6 @@ picture img {
     }
 
 }
-
-.poppins-regular {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 14px;
-   font-style: normal;
-   color: #103754;
-   
- }
-
 
 
 /* Styles pour la section role */
@@ -3206,739 +3196,279 @@ label {
 
 
 
-
-
-/* Styles pour la rubrique portfolio */
-
-#portfolio {
-   background-color: #103653;
-   margin-bottom: 0; /* Corrige le margin-bottom négatif */
-   padding: 0; /* contenu plein ecran sans marges */
-  
-}
-
-
-
-
-@media (max-width: 768px) {
-   #portfolio {
-      padding: 0; /* contenu plein ecran sans marges */
-   }
-
-  
-}
-
-
-
-#portfolio .profile-text {
-   margin-top: -40px; /* Valeur par défaut pour les écrans de taille moyenne et plus grande */
-  
-}
-
-@media (max-width: 767px) { 
-   #portfolio .profile-text {
-      margin-top: -50px; /* Réduction de la marge typo sur les écrans plus petits */
-      
-   }
-}
-
-
-
-
-
-
-
-.portfolio-section h1 {
-   color: #444243; /* Couleur noire pour le titre */
-   font-weight: bold; /* Texte en gras */
-   margin-bottom: 50px; /* Marge en bas du titre */
-   font-size: 30px; /* Taille de police de 24 pixels */
-}
-
-span.h2.portfolio-title {
-   font-size: 30px; /* Ajustez la taille de la police selon vos besoins */
-   font-weight: bold; /* Utilisez 'normal' pour le texte régulier */
-}
-
-
-
-
-
-
-
-.uni-text {
-   margin-top: 0px;
-   margin-left: 2vw; /* Utilisation de vw pour une marge relative à la largeur de la vue */
-   margin-right: 2vw;
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
-   color: #103653;
-   text-align: center; /* Centrer le texte sous le titre */
-}
- 
-
-.poppins-regular-accueil {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 14px;
-   font-style: normal;
-   color: #103754;
-   margin-bottom: 0px; /* Espace entre le titre et le texte */
- }
-
-
- .texte-proportionnel-questions,
-.texte-proportionnel-propos {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #894700;
-   margin-bottom: 0px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary-contact: #894700; /* Supprime le couleur bleue du lien du texte et contour */
-  }
- 
-  .btn-questions-primary,
- .btn-contact-primary {
-  color: #894700; /* Couleur du texte */
-  border-color: #894700; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
-  
- }
- 
- .btn-questions-primary:hover,
- .btn-contact-primary:hover {
-  background-color: #894700; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #894700; /* Ajoute un contour personnalisé */
- }
-
-
- a.btn.btn-questions-primary:active,
-a.btn.btn-questions-primary:focus,
-a.btn.btn-questions-primary:focus:active,
-a.btn.btn-contact-primary:active,
-a.btn.btn-contact-primary:focus,
-a.btn.btn-contact-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #894700; /* Remplacez par la couleur de bordure souhaitée */
-    color: #894700; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-.texte-proportionnel-sociabilisation,
-.texte-proportionnel-familial {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #6E7200;
-   margin-bottom: 0px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary: #6E7200; /* Supprime le couleur bleue du lien du texte et contour */
-  }
-
-.btn-sociabilisation-primary,
- .btn-familial-primary {
-  color: #6E7200; /* Couleur du texte */
-  border-color:#6E7200; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
- }
- 
- .btn-sociabilisation-primary:hover,
- .btn-familial-primary:hover {
-  background-color: #6E7200; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #6E7200; /* Ajoute un contour personnalisé */
- }
-
-
-
-
- a.btn.btn-sociabilisation-primary:active,
- a.btn.btn-sociabilisation-primary:focus,
- a.btn.btn-sociabilisation-primary:focus:active,
-a.btn.btn-familial-primary:active,
-a.btn.btn-familial-primary:focus,
-a.btn.btn-familial-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #6E7200; /* Remplacez par la couleur de bordure souhaitée */
-    color: #6E7200; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-
-.texte-proportionnel-ratio {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #61537F;
-   margin-bottom: 0px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary: #61537F; /* Supprime le couleur bleue du lien du texte et contour */
-  }
- 
- .btn-ratio-primary {
-  color: #61537F; /* Couleur du texte */
-  border-color:#61537F; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
- }
- 
- .btn-ratio-primary:hover {
-  background-color: #61537F; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #61537F; /* Ajoute un contour personnalisé */
- }
-
-a.btn.btn-ratio-primary:active,
-a.btn.btn-ratio-primary:focus,
-a.btn.btn-ratio-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #61537F; /* Remplacez par la couleur de bordure souhaitée */
-    color: #61537F; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-
-.texte-proportionnel-administratif {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #B94631;
-   margin-bottom: 5px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary: #B94631; /* Supprime le couleur bleue du lien du texte et contour */
-  }
- 
- .btn-administratif-primary {
-  color: #B94631; /* Couleur du texte */
-  border-color:#B94631; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
- }
- 
- .btn-administratif-primary:hover {
-  background-color: #B94631; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #B94631; /* Ajoute un contour personnalisé */
- }
-
-a.btn.btn-administratif-primary:active,
-a.btn.btn-administratif-primary:focus,
-a.btn.btn-administratif-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #B94631; /* Remplacez par la couleur de bordure souhaitée */
-    color: #B94631; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-
-.texte-proportionnel-activites {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #00767D;
-   margin-bottom: 5px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary: #00767D; /* Supprime le couleur bleue du lien du texte et contour */
-  }
- 
- .btn-activites-primary {
-  color: #00767D; /* Couleur du texte */
-  border-color:#00767D; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
- }
- 
- .btn-activites-primary:hover {
-  background-color: #00767D; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #00767D; /* Ajoute un contour personnalisé */
- }
-
-a.btn.btn-activites-primary:active,
-a.btn.btn-activites-primary:focus,
-a.btn.btn-activites-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #00767D; /* Remplacez par la couleur de bordure souhaitée */
-    color: #00767D; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-
-
-
-
-.texte-proportionnel-administratif {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #B94631;
-   margin-bottom: 5px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary: #B94631; /* Supprime le couleur bleue du lien du texte et contour */
-  }
- 
- .btn-administratif-primary {
-  color: #B94631; /* Couleur du texte */
-  border-color:#B94631; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
- }
- 
- .btn-administratif-primary:hover {
-  background-color: #B94631; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #B94631; /* Ajoute un contour personnalisé */
- }
-
-a.btn.btn-administratif-primary:active,
-a.btn.btn-administratif-primary:focus,
-a.btn.btn-administratif-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #B94631; /* Remplacez par la couleur de bordure souhaitée */
-    color: #B94631; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-
-.texte-proportionnel-activites {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #00767D;
-   margin-bottom: 5px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary: #00767D; /* Supprime le couleur bleue du lien du texte et contour */
-  }
- 
- .btn-activites-primary {
-  color: #00767D; /* Couleur du texte */
-  border-color:#00767D; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
- }
- 
- .btn-activites-primary:hover {
-  background-color: #00767D; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #00767D; /* Ajoute un contour personnalisé */
- }
-
-a.btn.btn-activites-primary:active,
-a.btn.btn-activites-primary:focus,
-a.btn.btn-activites-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #00767D; /* Remplacez par la couleur de bordure souhaitée */
-    color: #00767D; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-
-.texte-proportionnel-communication {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   font-style: normal;
-   color: #C20072;
-   margin-bottom: 5px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-/* Styles pour le bouton télécharger mon cv */
-
-:root {
-   --bs-primary: #00767D; /* Supprime le couleur bleue du lien du texte et contour */
-  }
- 
- .btn-communication-primary {
-  color: #C20072; /* Couleur du texte */
-  border-color:#C20072; /* Couleur de la bordure */
-  font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 12px;
-   font-style: normal;
- }
- 
- .btn-communication-primary:hover {
-  background-color: #C20072; /* Couleur de fond au survol */
-  color: #F8F9F6; /* Couleur du texte au survol */
-  outline: none; /* Supprime le contour par défaut */
-  border: 1px solid #C20072; /* Ajoute un contour personnalisé */
- }
-
-a.btn.btn-communication-primary:active,
-a.btn.btn-communication-primary:focus,
-a.btn.btn-communication-primary:focus:active {
-    background-color: transparent; /* Fond transparent au clic et au focus */
-    border-color: #C20072; /* Remplacez par la couleur de bordure souhaitée */
-    color: #C20072; /* Couleur du texte en #685153 au clic et au focus */
-    outline: none; /* Supprimez uniquement l'outline au clic et au focus */
-}
-
-
-.texte-proportionnel {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 25px;
-   font-style: normal;
-   color: #894700;
-   margin-bottom: 5px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-
-
-
-.texte-proportionnel-avis {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 25px;
-   font-style: normal;
-   color: #103653;
-   margin-bottom: 20px; /* Espace entre le titre et le texte */
-   margin-top: 0px; /* Espace entre le titre et le texte */
-   text-align: center;
-}
-
-
-.horizontal-line {
-   border: none; /* Supprime la bordure par défaut */
-   border-top: 2px solid #103653; /* Crée une ligne horizontale de 2px de hauteur avec la couleur désirée */
-   margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous de la ligne */
-   width: 100%; /* S'assure que la ligne prend toute la largeur disponible */
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-   .uni-text {
-      font-size: 10px;
-   }
-
-   .texte-proportionnel {
-      font-size: 16px;
-      
-   }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Styles pour le conteneur de l'image avec le bouton Suivant */
-
-#image-to-replace4,
-#image-to-replace3,
-#image-to-replace2,
-#image-to-replace1 {
-    width: 100%; /* Force la largeur à 100% pour garder la même dimension que les autres images */
-    border-radius: 0px; /* Coins arrondis ou carres reglage */
-    
-    margin: 0;
-    padding: 0;
-}
-
-/* Styles pour les boutons */
-.portfolio-item {
-    position: relative;
-}
-
-
-
-
-
-/* Styles spécifiques le titre "VOS QUESTIONS" */
-.poppins-bold-introduction-title {
-   font-family: "Poppins", sans-serif;
-   font-weight: 700;
-   font-style: normal;
-   color: #F8F9F6;
-   font-size: 1,5em; /* Taille de la police relative */
-   margin-bottom: 10px; /* Marge en bas du titre */
-   z-index: 1;
-}
-
-
- /* Animation de fondu pour "nos réponses" */
- @keyframes fadeInOutbretigny {
-   0%, 100% {
-       opacity: 0;
-   }
-   25%, 75% {
-       opacity: 1;
-   }
-}
-
-/* Appliquer l'animation "nos réponses" avec une durée de 3 secondes, répétition infinie */
-.fade-in-out-bretigny {
-   animation: fadeInOutfaq 8s infinite;
-   color: #96D2CA; /* Couleur du texte souhaitée */
-   display: inline-block; /* Maintient sur la même ligne */
-   font-family: "Finger Paint", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   font-size: 0.8em;
-   position: relative; /* Ajout de position relative */
-}
-
-.image-frame {
-   position: relative;
-}
-
-.image-overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(20, 56, 84, 0.0); /* Color overlay */
-   z-index: 1; /* Ensure it sits on top of the image */
-}
-
-#image-to-replace4 {
-   position: relative;
-   z-index: 0; /* Ensure the image is below the overlay */
-}
-
-
-
-
-.portfolio-text-space {
-   background-color: #F8F9F6; /* Fond similaire à .uni-frame si nécessaire */
-   width: 100%;
-   height: 100%; /* S'assure que la hauteur de la zone de texte correspond à celle de l'image */
-   text-align: center;
-   display: flex;
-   flex-direction: column; /* Permet de positionner le titre et le texte en colonne */
-   align-items: center;
-   justify-content: center;
-   padding: 20px; /* Ajustez le padding selon vos besoins */
-   box-sizing: border-box;
-}
-
-
-
-.align-items-center {
-   align-items: center; /* Centre verticalement le contenu de la colonne texte */
-}
-
-.portfolio-item {
-   height: 100%; /* Assure que le contenu remplit toute la hauteur */
-   margin: 0;
-   padding: 0;
-}
-
-
-
-.portfolio-text-space {
-   background-color: #F8F9F6; /* Couleur de fond pour la zone de texte */
-   height: 100%; /* S'assure que la hauteur de la zone de texte correspond à celle de l'image */
-   box-sizing: border-box;
-}
-
-.portfolio-image {
-   height: 100%; /* S'assure que l'image prend toute la hauteur disponible */
-   padding: 0px; /* espace entre l'image */
-   text-align: center;
-   padding: 0;
-}
-
-
-/* Supprimez la règle qui affecte toutes les images sous .portfolio-image */
-.portfolio-image img {
-   max-width: 100%;
-   height: auto;
-  
-  
-}
-
-
-
-
-
-
-
-
-.google-reviews-section {
-   background-color: #96D2CA;
-   
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-
-.meet-us-section {
-   background-color: #F8F9F6;
- 
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-}
-.meet-us-text {
-   font-size: 1.5rem;
-}
-
-
-
-
-
-.poppins-regular-meet {
-   display: inline; /* Pour aligner le texte sur la même ligne que le SVG */
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 18px;
-   font-style: normal;
-   color: #F8F9F6;
- }
- 
- .poppins-regular-us {
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-size: 14px;
-   font-style: normal;
-   color: #F8F9F6;
- }
-
- .google-reviews-section {
-   position: relative;
-   background-color: #F8F9F6; /* Couleur de fond de la section */
-   overflow: hidden; /* Évite le débordement du SVG */
-   padding: 0; /* Retire les marges internes */
-   margin: 0; /* Retire les marges externes */
-}
-
-
-
-
-
-
-
-.nuages-bleus-curvy {
-
-  
-   bottom: 0; /* Positionner le SVG en bas du conteneur */
-   left: 0; /* Alignement à gauche */
-   width: 100%;
-   height: auto; /* Ajuste la hauteur automatiquement pour garder le ratio d'aspect */
-   margin: 0; /* Pas de marge supplémentaire */
-   padding: 0; /* Pas de remplissage supplémentaire */
-}
-
-.container {
-   position: relative; /* Pour placer le contenu au-dessus du SVG */
-   z-index: 1; /* Assure que le contenu est au-dessus de l'image */
-   padding-top: 2rem; /* Ajustez la valeur pour donner un espace au-dessus du contenu si nécessaire */
-}
-
-
 #avis {
    background-color: #96D2CA;
  
 }
 
-/* Section contenant le SVG */
-.svg-background {
-   background-color: #96D2CA; /* Couleur de fond */
-   padding: 0; /* Pas de padding pour que le SVG touche les bords */
-   margin: 0; /* Pas de marge pour que la section s'étende entièrement */
-   width: 100%; /* Prend toute la largeur de l'écran */
+
+.header-main-avis {
+   background-color: #96D2CA;
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
+   text-align: center;
 }
 
-/* Conteneur du SVG */
-.svg-container {
-   width: 100%; /* Prend toute la largeur du parent */
-   overflow: hidden; /* Évite tout débordement du SVG */
-   padding: 0; /* Pas de padding pour ajuster le SVG en bas */
-}
-
-/* Assure que le SVG prend toute la largeur disponible */
-.nuages-bleus-curvy {
-   width: 100%; /* Prend toute la largeur de son conteneur */
-   height: auto; /* Maintient le ratio d'aspect de l'image */
-   display: block; /* Évite les marges sous l'image */
+.heading-main-avis {
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
+   color: #96D2CA;
+   margin: 0; /* Supprimez les marges verticales */
+   
 }
 
 
+.heading-avis {
+   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   color: #96D2CA;
+   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+}
+
+/* Style pour la section de contact pour éviter les espaces indésirables */
+.avis-section {
+   margin: 0; /* Pas de marge */
+   padding: 0; /* Pas de padding */
+}
+
+
+.container-fluid-avis {
+   padding: 0; /* Aucun remplissage */
+   margin: 0; /* Aucune marge */
+}
+
+.row-avis {
+   margin: 0; /* Aucune marge */
+   padding: 0; /* Aucun remplissage */
+}
+
+.col-md-12-avis {
+   margin: 0; /* Pas de marge supplémentaire */
+   padding: 0; /* Pas de remplissage supplémentaire */
+}
 
 
 
 
+
+
+.avis-container {
+   position: relative; /* Assurez-vous que le conteneur parent a une position relative */
+}
+
+
+
+
+
+#rating label {
+   font-size: 14px; /* Ajustez cette valeur selon vos besoins */
+}
+
+
+.avis-form {
+   background-color: #F8F9F6;
+   border: none; /* Supprimez la bordure par défaut de l'iframe */
+}
+
+.label-form-avis {
+   padding: 20px;
+   text-align: center; /* Alignement à gauche */
+ 
+}
+
+
+/* Conteneur du champ de formulaire avec position relative pour les labels flottants */
+.form-group-avis {
+   position: relative; /* Nécessaire pour positionner le label flottant */
+   margin-bottom: 20px; /* Espace entre les champs */
+   
+}
+
+
+/* Style du label flottant */
+.floating-label-avis {
+   position: absolute; /* Nécessaire pour flottement */
+   top: 10px; /* Position initiale du label */
+   left: 0; /* Alignement à gauche */
+   font-size: 14px; /* Taille du texte du label */
+   color: #103653; /* Couleur du label */
+   transition: all 0.2s ease; /* Transition pour déplacer le label */
+   pointer-events: none; /* Empêche l'interaction directe avec le label */
+}
+
+/* Styles de base pour les champs de formulaire */
+.form-control-avis {
+   width: 100%; /* Remplit le conteneur */
+   border: none;
+   border-bottom: 2px solid #103653; /* Couleur par défaut */
+   border-radius: 0; /* Pas de coins arrondis */
+   outline: none; /* Pas de bordure au focus */
+   padding: 10px 0; /* Espace intérieur du champ */
+   font-family: "Poppins", sans-serif;
+   background-color: #F8F9F6;
+   color: #103653; /* Couleur du texte */
+   transition: all 0.2s ease; /* Pour une transition fluide */
+}
+
+/* Quand le champ est en focus ou non vide, déplace le label vers le haut */
+.form-control-avis:focus + .floating-label-avis,
+.form-control-avis:not(:placeholder-shown) + .floating-label-avis {
+   top: -20px; /* Position du label lorsqu'il flotte */
+   font-size: 12px; /* Taille du texte réduite */
+   color: #103653; /* Couleur du label */
+}
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .floating-label-avis  {
+      font-size: 12px;
+   }
+ }
+
+
+/* Style pour le champ de saisie lorsqu'il est en focus */
+.form-control-avis:focus {
+   border-bottom-color: #103653; /* Enlève la couleur de la ligne en focus */
+   outline: none; /* Enlève également l'encadrement bleu du focus */
+   box-shadow: none; /* Enlève également toute ombre portée (shadow) */
+}
+
+/* Effet pour le texte lorsqu'il y a du contenu (non vide) */
+.form-control-avis:not(:placeholder-shown) {
+   color: #103653; /* Couleur du texte quand du contenu est saisi */
+ }
+
+
+/* Masquer le placeholder avec la même couleur que le fond */
+.form-control-avis::placeholder {
+   color: #F8F9F6; /* Couleur du placeholder ton sur ton avec le fond */
+}
+
+
+      #prenom,
+      #email, 
+      #message {
+         font-family: "Poppins", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+         background-color: #F8F9F6;
+        
+      }
+      
+
+
+
+
+
+
+      
+ 
+     #rating {
+         margin-top: 10px; /* Espace entre le label et les boutons radio */
+         
+     }
+ 
+     #rating input {
+         margin-right: 5px;
+     }
+
+
+     .floating-label-year,
+     .floating-label-recommend {
+      text-align: left;
+      display: block;
+      margin-left: 0; /* Assure l'alignement à gauche */
+  }
+  
+  .consent-label {
+   font-size: 0.7rem; /* Taille de la police ajustée */
+   color: #103653; /* Couleur du texte, optionnel pour consistance */
+}
+
+
+.poppins-regular-avis {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #103754;
+   text-align: center; /* Centrer le texte */
+   margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
+ }
+
+/* Styles pour la typo du texte caché de la faq */
+.add-space-bottom-avis {
+   margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #103754;
+   font-size: 14px;
+}
+
+ /* Styles pour les liens de la faq */
+.styled-link-avis {
+   font-weight: bold;
+   color: #103754;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.styled-link-avis:hover {
+   text-decoration: underline;
+}
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .styled-link-avis  {
+      font-size: 14px;
+   }
+ }
+
+
+ .avis-top-curvy {
+   width: 100%; /* Prendre toute la largeur */
+   height: auto; /* Assurer que le SVG garde ses proportions */
+   margin: 0; /* Pas de marge supplémentaire */
+   padding: 0; /* Pas de remplissage supplémentaire */
+}
+
+/* Positionnement de l'image SVG en haut du avis-label */
+.avis-curvy {
+   display: block; /* Pour s'assurer qu'elle occupe une ligne entière */
+   margin: 0 auto; /* Centrer horizontalement si nécessaire */
+   padding: 0; /* Pas de padding */
+   width: 100%; /* La rendre responsive en remplissant toute la largeur */
+}
+
+
+ .avis-bottom-curvy {
+   width: 100%; /* Utiliser 100% pour couvrir toute la largeur du conteneur parent */
+   height: auto; /* Assurer que le SVG garde ses proportions */
+   margin: 0; /* Pas de marge supplémentaire */
+   padding: 0; /* Pas de remplissage supplémentaire */
+   display: block; /* S'assurer que le SVG s'affiche comme un bloc */
+}
+
+
+
+
+/* Cacher l'image mobile par défaut */
+.mobile-image {
+   display: none;
+}
+
+/* Afficher l'image de bureau par défaut */
+.desktop-image {
+   display: block;
+}
+
+/* Cacher l'image de bureau sur les écrans mobiles */
+@media (max-width: 768px) {
+   .desktop-image {
+       display: none;
+   }
+
+   .mobile-image {
+       display: block;
+       
+   }
+}
 
