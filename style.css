@@ -2675,9 +2675,13 @@ position: relative; /* Ajout de position relative */
    }
 }
 
-
-
-
+.poppins-faq-hidden.espace-h3 {
+   margin-top: 40px;
+   margin-bottom: 40px;
+ }
+ 
+ 
+.faq-description h4,
 .faq-description h3 {
    font-family: "Poppins", sans-serif;
    font-weight: 400;
