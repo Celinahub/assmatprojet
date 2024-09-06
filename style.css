@@ -2668,7 +2668,9 @@ position: relative; /* Ajout de position relative */
 
 /* Ajoutez des styles spécifiques pour les écrans plus petits (par exemple, largeur inférieure à 768px) */
 @media (max-width: 768px) {
+   .faq-description h4,
    .faq-description h3,
+   .faq-description h4 strong,
    .faq-description h3 strong,
    .faq-description {
       font-size: 12px;
@@ -2692,6 +2694,7 @@ position: relative; /* Ajout de position relative */
    padding: 0;
 }
 
+.faq-description h4 strong,
 .faq-description h3 strong {
    font-weight: 700; /* Pour rendre le texte en gras si nécessaire */
 }
