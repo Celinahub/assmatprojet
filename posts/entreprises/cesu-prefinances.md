@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: "CESU préfinancés : j'économise!"
 description: "Découvrez comment réduire vos coûts de garde d'enfants grâce aux CESU préfinancés. Un guide complet sur les avantages pour les parents et les entreprises."
 tags: 
+  - entreprises
   - CESU préfinancé
   - Garde d'enfants
   - Aides familiales

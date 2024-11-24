@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: "Sable Magique : Activité Ludique et Sensorielle"
 description: "Découvrez le sable magique pour enfants : une activité sensorielle et créative idéale pour les tout-petits, favorisant leur éveil et imagination grâce à la manipulation et aux figurines."
 tags: 
+  - activites
   - enfants
   - activités sensorielles
   - sable magique

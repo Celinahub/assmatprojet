@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: "Clipp Tétine : Un Sevrage en Douceur pour Enfants"
 description: "Découvrez la méthode progressive pour arrêter la tétine avec le dispositif Clipp. Idéale pour un sevrage en douceur et le développement buccodentaire des enfants."
 tags: 
+  - produits
   - enfants
   - sevrage
   - tétine
