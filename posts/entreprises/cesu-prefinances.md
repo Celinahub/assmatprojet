@@ -13,7 +13,7 @@ tags:
   - RH entreprise
 url: "https://test-site-statique-blog-eleventy.netlify.app/posts/des-economies-grace-aux-cesu-prefinances"
 image: "https://chubert91assmat.netlify.app/images/cesu.jpg"
-date: 2024-11-09
+date: 2024-11-23
 category: "ENTREPRISES"
 featuredImage: /images/uploads/cesu.jpg
 jsonLd: >

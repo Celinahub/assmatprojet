@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "Sable Magique avec Figurines : Activité Ludique et Sensorielle pour Enfants"
+title: "Sable Magique : Activité Ludique et Sensorielle"
 description: "Découvrez le sable magique pour enfants : une activité sensorielle et créative idéale pour les tout-petits, favorisant leur éveil et imagination grâce à la manipulation et aux figurines."
 tags: 
   - enfants
@@ -15,7 +15,7 @@ tags:
   - éveil de l'imagination
 url: "https://test-site-statique-blog-eleventy.netlify.app/posts/sable-magique-avec-figurines"
 image: "https://chubert91assmat.netlify.app/images/sable-magique.jpg"
-date: 2019-10-07
+date: 2024-10-07
 category: "ACTIVITÉS POUR ENFANT"
 featuredImage: /images/uploads/sable-magique.jpg
 jsonLd: >

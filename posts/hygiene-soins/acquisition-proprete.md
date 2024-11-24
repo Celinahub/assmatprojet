@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "L'acquisition de la propreté chez les enfants : conseils et étapes clés"
+title: "L'acquisition de la propreté : conseils et étapes clés"
 description: "Découvrez les étapes et les signes de l'acquisition de la propreté, ainsi que des conseils pratiques pour accompagner votre enfant dans cette étape importante de son développement."
 tags: 
   - acquisition de la propreté
@@ -13,7 +13,7 @@ tags:
   - psychologie de l'enfant
 url: "https://test-site-statique-blog-eleventy.netlify.app/posts/acquisistion-de-la-proprete"
 image: "https://chubert91assmat.netlify.app/images/pot.jpg"
-date: 2024-11-11
+date: 2024-11-24
 category: "HYGIÈNE / SOINS"
 featuredImage: /images/uploads/pot.jpg
 jsonLd: >

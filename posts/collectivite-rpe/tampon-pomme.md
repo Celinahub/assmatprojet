@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "Peindre avec des pommes : Activité sensorielle et découverte du goût"
+title: "Peindre avec des pommes : semaine du goût"
 description: "Découvrez une activité ludique et sensorielle pour les enfants : peindre avec des pommes. Un excellent moyen d'introduire la Semaine du Goût et d'éveiller les sens des tout-petits."
 tags: 
   - enfants
@@ -13,7 +13,7 @@ tags:
   - activités éducatives
 url: "https://test-site-statique-blog-eleventy.netlify.app/posts/peindre-avec-des-pommes"
 image: "https://chubert91assmat.netlify.app/images/tampon-pomme.jpg"
-date: 2023-10-15
+date: 2024-10-20
 category: "LA COLLECTIVITE GRÂCE AU RPE"
 featuredImage: /images/uploads/tampon-pomme.jpg
 jsonLd: >

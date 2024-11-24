@@ -13,7 +13,7 @@ tags:
   - cuisine maison
 url: "https://test-site-statique-blog-eleventy.netlify.app/posts/bouillie-au-chocolat"
 image: "https://chubert91assmat.netlify.app/images/recette-bouillie-chocolat.jpg"
-date: 2024-11-08
+date: 2024-11-22
 category: "RECETTES / ATELIER CUISINE"
 featuredImage: /images/uploads/recette-bouillie-chocolat.jpg
 jsonLd: >
