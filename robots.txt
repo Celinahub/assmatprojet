@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://chubert91assmat.netlify.app/sitemap.xml

@@ -1,0 +1,162 @@
+---
+layout: layouts/base.njk
+bodyClass: "blog-posts-page"
+---
+
+
+
+<section id="contenu-article">
+<h2 class="poppins-regular-titre-section-article text-center">Détails de l'Article</h2> <!-- Titre de la section -->
+
+<article class="container-article my-4 visuel-content">
+
+<h2 class="poppins-regular-titre-article text-center">{{ title }}</h2>
+
+<div class="meta-info">
+   <p>{{ category }} - {{ date | date("dd MMMM yyyy") }}</p>
+</div>
+
+
+<div class="content-wrapper"> <!-- Nouveau conteneur pour l'image et le texte -->
+<img src="{{ featuredImage | url }}" alt="{{ imageAlt }}" class="img-fluid mx-auto d-block">
+
+<!-- Boutons de partage -->
+<div class="share-buttons"> <!-- Début des boutons de partage -->
+
+    <!-- Twitter -->
+   <a href="https://twitter.com/intent/tweet?text={{ page.title | urlencode }}&url={{ page.url | absoluteUrl }}" target="_blank" class="btn btn-twitter">
+    <img src="{{ '/images/blog/x-bretigny.svg' | url }}" class="icone-partage-reseaux" alt="Partager l'article {{ title }} sur Twitter">
+</a>
+
+    <!-- Facebook -->
+<a href="https://www.facebook.com/sharer.php?u=https://netlify.app/{{ page.url }}" 
+   target="_blank" 
+   class="btn btn-facebook">
+     <img src="{{ '/images/blog/social-facebook-bretigny.svg' | url }}" class="icone-partage-reseaux" alt="Partager l'article {{ title }} sur Facebook">
+</a>
+
+
+   <!-- LinkedIn -->
+<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absoluteUrl | urlencode }}&title={{ page.title | urlencode }}" target="_blank" class="btn btn-linkedin">
+     <img src="{{ '/images/blog/linkedin-bretigny.svg' | url }}" class="icone-partage-reseaux" alt="Partager l'article {{ title }} sur LinkedIn">
+</a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/?url={{ page.url }}" target="_blank" class="btn btn-instagram">
+          <img src="{{ '/images/blog/social-insta-bretigny.svg' | url }}" class="icone-partage-reseaux" alt="Partager l'article {{ title }} sur Instagram">
+    </a>
+
+   <!-- Pinterest -->
+<a href="https://pinterest.com/pin/create/button/?url={{ page.url | absoluteUrl | urlencode }}&media=chemin/vers/image.jpg&description={{ page.title | urlencode }}" target="_blank" class="btn btn-pinterest">
+     <img src="{{ '/images/blog/pinterest-bretigny.svg' | url }}" class="icone-partage-reseaux" alt="Partager l'article {{ title }} sur Pinterest">
+</a>
+
+
+<!-- Bouton pour copier le lien -->
+    <button class="btn btn-copy-link" onclick="copyLink()">
+        <img src="{{ '/images/blog/lien-article-bretigny.svg' | url }}" class="icone-partage-lien" alt="Copier le lien">
+    </button> <!-- Fin du bouton pour copier le lien -->
+</div> <!-- Fin des boutons de partage -->
+
+
+
+
+    
+
+    <div class="article-content">
+        {{ content | safe }}
+    </div>
+    </div> <!-- Fin du conteneur -->
+</article>
+
+
+<!-- Ajout du JSON-LD pour le référencement -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title }}",
+  "image": "{{ image }}",
+  "datePublished": "{{ date }}",
+  "dateModified": "{{ date }}",
+  "description": "{{ description }}",
+  "author": {
+    "@type": "Person",
+    "name": "Céline Hubert"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chubert Assmat Brétigny Blog",
+    "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+  },
+  "keywords": [{% for tag in tags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{ slug }}"
+  }
+}
+</script>
+
+
+ 
+
+
+
+
+
+
+<!-- Bouton de retour à la fin de l'article -->
+  <div class="back-button">
+    <a href="javascript:history.back()" class="btn-back">
+      <img src="{{ '/images/blog/car-demi-tour-svgrepo-com.svg' | url }}" alt="Retour" class="back-icon">
+    
+    </a>
+  </div>
+
+
+</section> <!-- Fin de la section du contenu du l'article-->
+
+
+
+
+
+
+
+
+<script>
+    function copyLink() {
+        var tempInput = document.createElement("input");
+        tempInput.style.position = "absolute";
+        tempInput.style.left = "-1000px"; 
+        document.body.appendChild(tempInput);
+        
+        tempInput.value = window.location.href; 
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        
+        alert("Lien copié dans le presse-papier !");
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

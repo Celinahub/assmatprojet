@@ -1,0 +1,367 @@
+backend:
+  name: git-gateway
+  branch: main # ou la branche que tu utilises
+  publish_mode: editorial_workflow
+
+media_folder: "images/uploads"  # Dossier pour les médias (dans le répertoire racine)
+public_folder: "/images/uploads"  # URL publique pour accéder aux images (correspond au chemin des fichiers sur le site)
+
+# Aperçu Netlify CMS avec un Template
+site_url: "https://test-site-statique-blog-eleventy.netlify.app"  # Votre URL de site
+preview_templates:
+  - name: "post"
+    template: "/layouts/post.njk"
+
+
+collections:
+  - name: "recettes-atelier-cuisine"
+    label: "RECETTES / ATELIER CUISINE"
+    folder: "posts/recettes-atelier-cuisine"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }  # Champ slug explicitement ajouté
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Texte alternatif", name: "imageAlt", widget: "string" } # Nouveau champ pour le alt
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "category", widget: "string", default: "RECETTES / ATELIER CUISINE" }
+      - { label: "Image vedette", name: "featuredImage", widget: "image" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      # Ajouter un champ JSON-LD structuré
+      - name: "jsonLd"
+        label: "JSON-LD"
+        widget: "text"
+        default: |
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "{{title}}",
+            "image": "{{image}}",
+            "datePublished": "{{date}}",
+            "dateModified": "{{date}}",
+            "description": "{{description}}",
+            "author": {
+              "@type": "Person",
+              "name": "Céline Hubert"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Chubert Assmat Brétigny Blog",
+              "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+            },
+            "keywords": ["{{tags}}"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+            }
+          }
+
+
+
+
+    
+  - name: "collectivite-rpe"
+    label: "LA COLLECTIVITE GRÂCE AU RPE"
+    folder: "posts/collectivite-rpe"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }  # Champ slug explicitement ajouté
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string" }  # Nouveau champ pour l'URL
+      - { label: "Image", name: "image", widget: "image" }  # Nouveau champ pour une image
+      - { label: "Texte alternatif", name: "imageAlt", widget: "string" } # Nouveau champ pour le alt
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "category", widget: "string", default: "LA COLLECTIVITE GRÂCE AU RPE" }
+      - { label: "Image vedette", name: "featuredImage", widget: "image" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      # Ajouter un champ JSON-LD structuré
+      - name: "jsonLd"
+        label: "JSON-LD"
+        widget: "text"
+        default: |
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "{{title}}",
+            "image": "{{image}}",
+            "datePublished": "{{date}}",
+            "dateModified": "{{date}}",
+            "description": "{{description}}",
+            "author": {
+              "@type": "Person",
+              "name": "Céline Hubert"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Chubert Assmat Brétigny Blog",
+              "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+            },
+            "keywords": ["{{tags}}"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+            }
+          }
+
+
+     
+      
+
+  - name: "activites-enfant"
+    label: "ACTIVITES"
+    folder: "posts/activites-enfant"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }   
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }  # Champ slug explicitement ajouté
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string" }  # Nouveau champ pour l'URL
+      - { label: "Image", name: "image", widget: "image" }  # Nouveau champ pour une image
+      - { label: "Texte alternatif", name: "imageAlt", widget: "string" } # Nouveau champ pour le alt
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "category", widget: "string", default: "ACTIVITÉS POUR ENFANT" }
+      - { label: "Image vedette", name: "featuredImage", widget: "image" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      # Ajouter un champ JSON-LD structuré
+      - name: "jsonLd"
+        label: "JSON-LD"
+        widget: "text"
+        default: |
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "{{title}}",
+            "image": "{{image}}",
+            "datePublished": "{{date}}",
+            "dateModified": "{{date}}",
+            "description": "{{description}}",
+            "author": {
+              "@type": "Person",
+              "name": "Céline Hubert"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Chubert Assmat Brétigny Blog",
+              "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+            },
+            "keywords": ["{{tags}}"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+            }
+          }
+
+
+      
+
+  - name: "selection-produits"
+    label: "SELECTION PRODUITS"
+    folder: "posts/selection-produits"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }  # Champ slug explicitement ajouté
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Texte alternatif", name: "imageAlt", widget: "string" } # Nouveau champ pour le alt
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "category", widget: "string", default: "SELECTION PRODUITS" }
+      - { label: "Image vedette", name: "featuredImage", widget: "image" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      # Ajouter un champ JSON-LD structuré
+      - name: "jsonLd"
+        label: "JSON-LD"
+        widget: "text"
+        default: |
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "{{title}}",
+            "image": "{{image}}",
+            "datePublished": "{{date}}",
+            "dateModified": "{{date}}",
+            "description": "{{description}}",
+            "author": {
+              "@type": "Person",
+              "name": "Céline Hubert"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Chubert Assmat Brétigny Blog",
+              "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+            },
+            "keywords": ["{{tags}}"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+            }
+          }
+
+      
+      
+
+  - name: "/hygiene-soins"
+    label: "HYGIÈNE / SOINS"
+    folder: "posts/hygiene-soins"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }  # Champ slug explicitement ajouté
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string" }  # Nouveau champ pour l'URL
+      - { label: "Image", name: "image", widget: "image" }  # Nouveau champ pour une image
+      - { label: "Texte alternatif", name: "imageAlt", widget: "string" } # Nouveau champ pour le alt
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "category", widget: "string", default: "HYGIÈNE / SOINS" }
+      - { label: "Image vedette", name: "featuredImage", widget: "image" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      # Ajouter un champ JSON-LD structuré
+      - name: "jsonLd"
+        label: "JSON-LD"
+        widget: "text"
+        default: |
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "{{title}}",
+            "image": "{{image}}",
+            "datePublished": "{{date}}",
+            "dateModified": "{{date}}",
+            "description": "{{description}}",
+            "author": {
+              "@type": "Person",
+              "name": "Céline Hubert"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Chubert Assmat Brétigny Blog",
+              "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+            },
+            "keywords": ["{{tags}}"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+            }
+          }
+
+      
+
+  - name: "actualites-locales"
+    label: "ACTUALITES LOCALES"
+    folder: "posts/actualites-locales"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }  # Champ slug explicitement ajouté
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string" }  # Nouveau champ pour l'URL
+      - { label: "Image", name: "image", widget: "image" }  # Nouveau champ pour une image
+      - { label: "Texte alternatif", name: "imageAlt", widget: "string" } # Nouveau champ pour le alt
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "category", widget: "string", default: "ACTUALITES LOCALES" }
+      - { label: "Image vedette", name: "featuredImage", widget: "image" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      # Ajouter un champ JSON-LD structuré
+      - name: "jsonLd"
+        label: "JSON-LD"
+        widget: "text"
+        default: |
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "{{title}}",
+            "image": "{{image}}",
+            "datePublished": "{{date}}",
+            "dateModified": "{{date}}",
+            "description": "{{description}}",
+            "author": {
+              "@type": "Person",
+              "name": "Céline Hubert"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Chubert Assmat Brétigny Blog",
+              "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+            },
+            "keywords": ["{{tags}}"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+            }
+          }
+
+
+
+      
+  - name: "entreprises"
+    label: "ENTREPRISES"
+    folder: "posts/entreprises"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }  # Champ slug explicitement ajouté
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string" }  # Nouveau champ pour l'URL
+      - { label: "Image", name: "image", widget: "image" }  # Nouveau champ pour une image
+      - { label: "Texte alternatif", name: "imageAlt", widget: "string" } # Nouveau champ pour le alt
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "category", widget: "string", default: "ENTREPRISES" }
+      - { label: "Image vedette", name: "featuredImage", widget: "image" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+      # Ajouter un champ JSON-LD structuré
+      - name: "jsonLd"
+        label: "JSON-LD"
+        widget: "text"
+        default: |
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "{{title}}",
+            "image": "{{image}}",
+            "datePublished": "{{date}}",
+            "dateModified": "{{date}}",
+            "description": "{{description}}",
+            "author": {
+              "@type": "Person",
+              "name": "Céline Hubert"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Chubert Assmat Brétigny Blog",
+              "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+            },
+            "keywords": ["{{tags}}"],
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+            }
+          }
+
+
+      
+      

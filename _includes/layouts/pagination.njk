@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+title: "Page de Pagination"
+pagination:
+  data: collections.posts
+  size: 5
+  alias: pagination
+---
+
+<h2>Articles paginés</h2>
+<ul>
+  {% for post in pagination.items %}
+    <li>
+      <h3>{{ post.data.title }}</h3>
+      <p>{{ post.templateContent | safe }}</p>
+    </li>
+  {% else %}
+    <li>Aucun article trouvé dans les articles paginés.</li>
+  {% endfor %}
+</ul>
+
+{% if pagination.pages > 1 %}
+  <nav class="pagination-nav">
+    <ul>
+      {% for page in pagination.pages %}
+        <li>
+          <a href="{{ page.url }}" class="pagination-btn pagination-link">
+            {% if page.pageNumber > 1 %}
+              <img src="{{ '/images/car-demi-tour-svgrepo-com.svg' | url }}" alt="Previous" class="pagination-icon">
+            {% endif %}
+            {{ page.pageNumber }}
+            {% if page.pageNumber < pagination.pages %}
+              <img src="{{ '/images/car-avance-svgrepo-com.svg' | url }}" alt="Next" class="pagination-icon">
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
+
