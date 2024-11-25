@@ -11,7 +11,7 @@ tags:
   - recette facile
   - recette rapide
   - cuisine maison
-url: "https://test-site-statique-blog-eleventy.netlify.app/posts/bouillie-au-chocolat"
+url: "https://chubert91assmat.netlify.app/posts/bouillie-au-chocolat"
 image: "https://chubert91assmat.netlify.app/images/recette-bouillie-chocolat.jpg"
 date: 2024-11-22
 category: "RECETTES / ATELIER CUISINE"
@@ -32,7 +32,7 @@ jsonLd: >
     "publisher": {
       "@type": "Organization",
       "name": "Chubert Assmat Brétigny Blog",
-      "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+      "url": "https://chubert91assmat.netlify.app/"
     },
     "keywords": [
       "recette bouillie au chocolat", 
@@ -47,7 +47,7 @@ jsonLd: >
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+      "@id": "https://chubert91assmat.netlify.app/article/{{slug}}"
     }
   }
 ---

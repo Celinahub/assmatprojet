@@ -33,7 +33,7 @@ jsonLd: >
     "publisher": {
       "@type": "Organization",
       "name": "Chubert Assmat Brétigny Blog",
-      "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+      "url": "https://chubert91assmat.netlify.app/"
     },
     "keywords": [
       "Clipp tétine", 
@@ -49,7 +49,7 @@ jsonLd: >
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+      "@id": "https://chubert91assmat.netlify.app/article/{{slug}}"
     }
   }
 ---

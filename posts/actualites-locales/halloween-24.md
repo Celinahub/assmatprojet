@@ -11,7 +11,7 @@ tags:
   - Brétigny-sur-Orge
   - fêtes de fin d'année
   - culture mexicaine
-url: "https://test-site-statique-blog-eleventy.netlify.app/posts/halloween-brétigny-citrouilles-día-de-los-muertos"
+url: "https://chubert91assmat.netlify.app/posts/halloween-brétigny-citrouilles-día-de-los-muertos"
 image: "https://chubert91assmat.netlify.app/images/halloween.-bretigny-24.jpg"
 date: 2024-10-24
 category: "ACTUALITES LOCALES"
@@ -32,7 +32,7 @@ jsonLd: >
     "publisher": {
       "@type": "Organization",
       "name": "Chubert Assmat Brétigny Blog",
-      "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+      "url": "https://chubert91assmat.netlify.app/"
     },
     "keywords": [
       "Halloween Brétigny-sur-Orge", 
@@ -48,7 +48,7 @@ jsonLd: >
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+      "@id": "https://chubert91assmat.netlify.app/article/{{slug}}"
     }
   }
 ---

@@ -12,7 +12,7 @@ tags:
   - Travailleur indépendant
   - Fiscalité
   - RH entreprise
-url: "https://test-site-statique-blog-eleventy.netlify.app/posts/des-economies-grace-aux-cesu-prefinances"
+url: "https://chubert91assmat.netlify.app/posts/des-economies-grace-aux-cesu-prefinances"
 image: "https://chubert91assmat.netlify.app/images/cesu.jpg"
 date: 2024-11-23
 category: "ENTREPRISES"
@@ -33,7 +33,7 @@ jsonLd: >
     "publisher": {
       "@type": "Organization",
       "name": "Chubert Assmat Brétigny Blog",
-      "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+      "url": "chubert91assmat.netlify.app/"
     },
     "keywords": [
       "CESU préfinancé", 
@@ -46,7 +46,7 @@ jsonLd: >
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+      "@id": "https://chubert91assmat.netlify.app/article/{{slug}}"
     }
   }
 ---

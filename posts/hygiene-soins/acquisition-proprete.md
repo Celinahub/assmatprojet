@@ -12,7 +12,7 @@ tags:
   - parents
   - éducation bienveillante
   - psychologie de l'enfant
-url: "https://test-site-statique-blog-eleventy.netlify.app/posts/acquisistion-de-la-proprete"
+url: "https://chubert91assmat.netlify.app/posts/acquisistion-de-la-proprete"
 image: "https://chubert91assmat.netlify.app/images/pot.jpg"
 date: 2024-11-24
 category: "HYGIÈNE / SOINS"
@@ -33,7 +33,7 @@ jsonLd: >
     "publisher": {
       "@type": "Organization",
       "name": "Chubert Assmat Brétigny Blog",
-      "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+      "url": "https://chubert91assmat.netlify.app/"
     },
     "keywords": [
       "acquisition de la propreté",
@@ -48,7 +48,7 @@ jsonLd: >
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+      "@id": "https://chubert91assmat.netlify.app/article/{{slug}}"
     }
   }
 ---

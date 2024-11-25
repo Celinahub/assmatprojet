@@ -14,7 +14,7 @@ tags:
   - activités manuelles
   - figurines
   - éveil de l'imagination
-url: "https://test-site-statique-blog-eleventy.netlify.app/posts/sable-magique-avec-figurines"
+url: "https://chubert91assmat.netlify.app/posts/sable-magique-avec-figurines"
 image: "https://chubert91assmat.netlify.app/images/sable-magique.jpg"
 date: 2024-10-07
 category: "ACTIVITÉS POUR ENFANT"
@@ -35,7 +35,7 @@ jsonLd: >
     "publisher": {
       "@type": "Organization",
       "name": "Chubert Assmat Brétigny Blog",
-      "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+      "url": "https://chubert91assmat.netlify.app/"
     },
     "keywords": [
       "sable magique", 
@@ -53,7 +53,7 @@ jsonLd: >
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+      "@id": "https://chubert91assmat.netlify.app/article/{{slug}}"
     }
   }
 ---

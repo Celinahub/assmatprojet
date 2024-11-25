@@ -11,7 +11,7 @@ tags:
   - peinture pour enfants
   - néophobie alimentaire
   - activités éducatives
-url: "https://test-site-statique-blog-eleventy.netlify.app/posts/peindre-avec-des-pommes"
+url: "https://chubert91assmat.netlify.app/posts/peindre-avec-des-pommes"
 image: "https://chubert91assmat.netlify.app/images/tampon-pomme.jpg"
 date: 2024-10-20
 category: "LA COLLECTIVITE GRÂCE AU RPE"
@@ -32,7 +32,7 @@ jsonLd: >
     "publisher": {
       "@type": "Organization",
       "name": "Chubert Assmat Brétigny Blog",
-      "url": "https://test-site-statique-blog-eleventy.netlify.app/"
+      "url": "https://chubert91assmat.netlify.app/"
     },
     "keywords": [
       "Peindre avec des pommes", 
@@ -48,7 +48,7 @@ jsonLd: >
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://test-site-statique-blog-eleventy.netlify.app/article/{{slug}}"
+      "@id": "https://chubert91assmat.netlify.app/article/{{slug}}"
     }
   }
 ---
