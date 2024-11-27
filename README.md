@@ -1,6 +1,6 @@
 # Site Web de Céline Hubert - Assistante Maternelle Agréée
 
-![Capture d'écran](capture-site-blog-celine-hubert)
+![Capture d'écran](capture-site-blog-celine-hubert.jpg)
 
 
 Bienvenue sur le site de Céline Hubert, assistante maternelle agréée, dédié à la présentation de mes services de garde d’enfants. Ce projet web a été conçu avec des outils modernes pour offrir une expérience rapide, intuitive et personnalisée, tout en intégrant un blog pour partager des articles utiles aux parents.
@@ -86,6 +86,7 @@ cd nom-du-projet
 
 ## Structure du projet
 
+```bash
 assmatprojet/
 |-- _data/ 
 |    |-- metadata.json           # Fichier de métadonnées pour configurer ou enrichir le contenu.
@@ -153,7 +154,7 @@ assmatprojet/
 |-- rss.xml.njk                  # Flux RSS standard.
 |-- rss.info.njk                 # Page supplémentaire d'information sur le RSS.
 |-- sitemap.xml.njk              # Plan du site pour les moteurs de recherche.
-
+```
 
 ## Choix des technologies
 
