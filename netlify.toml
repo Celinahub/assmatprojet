@@ -24,16 +24,6 @@
 
 # Configuration des en-têtes HTTP
 [[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' https://trusted-cdn.com; style-src 'self' 'unsafe-inline'; img-src 'self' https://trusted-cdn.com; font-src 'self' https://trusted-cdn.com;"
-    X-Frame-Options = "SAMEORIGIN"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "no-referrer-when-downgrade"
-    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
-
-# Configuration du cache pour les fichiers CSS et images
-[[headers]]
   for = "/*.css"
   [headers.values]
     Cache-Control = "max-age=31536000, immutable"
