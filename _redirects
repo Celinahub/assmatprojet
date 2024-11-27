@@ -1,3 +1,8 @@
+# Force HTTPS
+/*  https://chubert91assmat.netlify.app/:splat 301!
+
+# Interdit l’accès au dossier /admin
 /admin/*    403
+
+# Gestion de la page 404 personnalisée
 /*          /404.html   404
-/*          /index.html   200
