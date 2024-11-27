@@ -6,3 +6,18 @@
 
 # Gestion de la page 404 personnalisée
 /*          /404.html   404
+
+# Content Security Policy
+/*  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted-cdn.com
+
+# X-Frame-Options
+/*  X-Frame-Options: SAMEORIGIN
+
+# X-Content-Type-Options
+/*  X-Content-Type-Options: nosniff
+
+# Referrer-Policy
+/*  Referrer-Policy: no-referrer-when-downgrade
+
+# Permissions-Policy
+/*  Permissions-Policy: geolocation=(), microphone=(), camera=()
