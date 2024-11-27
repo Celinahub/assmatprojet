@@ -68,20 +68,25 @@ Assurez-vous d'avoir installé :
 
 ### Étapes d'installation
 1. Clonez ce dépôt :  
-   ```bash
+```bash
   git clone https://github.com/Celinahub/assmatprojet.git
 cd nom-du-projet
+```
 
-
-2. Installez les dépendances :  
+2. Installez les dépendances : 
+```bash
   npm install
+```
 
-3. Lancez un serveur local :  
+3. Lancez un serveur local :
+ ```bash
   npx eleventy --serve
+```
 
 4. Générez les fichiers de production : 
+```bash
   npx eleventy
-
+```
   Les fichiers générés se trouvent dans le dossier _site.
 
 ## Structure du projet
