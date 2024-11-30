@@ -56,13 +56,13 @@ jsonLd: >
 
 <br><br>
 
-## MyPottyTraining : Une acquisition respectueuse de l'environnement 
+## **MyPottyTraining : Une acquisition respectueuse de l'environnement** 
 
 Saviez-vous qu’un pot d’apprentissage classique nécessite **3 375 litres d’eau** chaque année, soit une dépense d’environ **540 €** ? Face à cette problématique, **Magalie Kangni** a conçu MyPottyTraining, un pot écologique et innovant qui facilite l'acquisition de la propreté tout en réduisant l'impact environnemental des familles.
 
 <br><br>
 
-## Un nettoyage simplifié et hygiénique 
+## **Un nettoyage simplifié et hygiénique** 
 
 Avec MyPottyTraining, fini le contact direct avec les urines et les selles ! Ce pot révolutionnaire utilise des **sacs biodégradables enrichis en coques de coquilles Saint-Jacques**, un matériau naturel et durable qui absorbe efficacement les liquides et les solides.
 Ce système évite :
@@ -75,7 +75,7 @@ Ce système évite :
 
 <br><br>
 
-### Comment ça marche ? 
+### **Comment ça marche ?** 
 
 - **ETAPE 1** : Placer un **sac bio** sur la lunette du pot.
 
@@ -90,7 +90,7 @@ En fin de journée, il suffit de vider le contenu dans une poubelle, un geste si
 
 <br><br>
 
-## Un kit nomade et écologique 
+## **Un kit nomade et écologique** 
 
 Le pot MyPottyTraining est conçu pour faciliter la vie des parents et des assistantes maternelles agréées, même en déplacement. **Son panier de rangement** permet d’avoir à portée de main tout le nécessaire d’hygiène : papier toilette, lingettes, gel hydroalcoolique, etc. C’est un **véritable kit nomade**, parfait pour les longues promenades au parc ou les sorties en famille, surtout lorsqu’il n’y a pas de point d’eau à proximité.
 
@@ -104,7 +104,7 @@ Pour plus de **conseils sur l’aquisition de la propreté**, en tant qu’assis
 
 <br><br>
 
-## Un impact environnemental positif
+## **Un impact environnemental positif**
 MyPottyTraining n’est pas seulement pratique : il contribue aussi à réduire l’empreinte écologique liée à l’aquisition de la propreté. 
 
 - **Réduction de la consommation d’eau** grâce à l’élimination des nettoyages fréquents.
@@ -115,7 +115,7 @@ MyPottyTraining n’est pas seulement pratique : il contribue aussi à réduire 
 
 <br><br>
 
-## Rejoignez l’aventure sur Ulule !
+## **Rejoignez l’aventure sur Ulule !**
 Pour faire de ce projet une réalité, une campagne de financement participatif est en cours sur **Ulule** avec un objectif initial de 5 000 €. Ces fonds permettront de lancer la première production de MyPottyTraining et de soutenir la logistique.
 
 En soutenant le projet, vous bénéficiez de :
@@ -128,11 +128,11 @@ En soutenant le projet, vous bénéficiez de :
 
 <br><br>
 
-## À propos de MyPottyTraining 
+## **À propos de MyPottyTraining** 
 
 **Magalie Kangni**, fondatrice de MyPottyTraining, est une professionnelle engagée qui a à cœur de simplifier l’aquisition de la propreté tout en respectant l’environnement. Son ambition : proposer des solutions hygiéniques, pratiques et durables pour accompagner les familles et les professionnels de la petite enfance.
 
-##  Envie d’en savoir plus ou de soutenir ce projet ? 
+## **Envie d’en savoir plus ou de soutenir ce projet ?** 
 Rendez-vous sur Ulule et participez à cette aventure écologique qui fera la différence pour les générations futures !
 
 <br><br>

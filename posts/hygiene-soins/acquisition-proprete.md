@@ -54,11 +54,11 @@ jsonLd: >
 ---
 
 
-## Quand et comment proposer le pot ou le réducteur ?
+## **Quand et comment proposer le pot ou le réducteur ?**
 L'acquisition de la propreté est une étape importante dans le développement de l’enfant, au même titre que la marche ou le langage. Chaque enfant progresse à son propre rythme, et il est essentiel de lui faire confiance. Voici les signaux à observer et les meilleures pratiques pour l’accompagner dans cette transition.
 
 
-## Quand votre enfant est-il prêt ?
+## **Quand votre enfant est-il prêt ?**
 Votre enfant montre qu’il est prêt à abandonner les couches lorsqu’il :
 
 - **Il vous informe** qu'il a fait « pipi » ou « caca ».
@@ -74,7 +74,7 @@ Votre enfant montre qu’il est prêt à abandonner les couches lorsqu’il :
 
 Le secret d'une acquisition de la propreté réussie est de ne pas se focaliser dessus ni de créer un rapport de force ou de pression. À 2 ans et demi ou 3 ans, votre enfant traverse souvent une période d'opposition marquée par le "NON". Dès que vous sentez qu'il est prêt, l'accompagnement peut commencer chez vous. En tant que premiers référents affectifs, vous jouez un rôle clé dans cette étape privilégiée et intime. Pour assurer une continuité dans cet accompagnement, le professionnel de la petite enfance prendra ensuite le relais. Ensemble, nous formons une équipe pour soutenir votre enfant dans cette démarche.
 
-## Comment accompagner cette étape ?
+## **Comment accompagner cette étape ?**
 L’essentiel est de rester **patient** et d’éviter de créer une pression excessive. Voici quelques étapes clés :
 
 - **Introduisez le pot progressivement** : placez-le à disposition de l’enfant et laissez-le explorer.
@@ -83,11 +83,11 @@ L’essentiel est de rester **patient** et d’éviter de créer une pression ex
 
 
 
-## Une régression ou une stagnation peut survenir dans les cas suivants :
+## **Une régression ou une stagnation peut survenir dans les cas suivants :**
 - **Les selles** peuvent être perçues par l'enfant comme une partie de lui-même qui se détache et disparaît dans les toilettes, ce qui peut provoquer une certaine angoisse.
 - **Un déménagement ou l’arrivée d’un nouveau-né** peuvent également entraîner une régression. Dans ce cas, expliquez à votre enfant que ce n'est pas grave. S'il réclame la couche, écoutez-le, il se sentira ainsi compris et rassuré. Reculer pour mieux avancer est souvent la meilleure approche. Le besoin de sécurité est essentiel à cette étape.
 
-## Plusieurs facteurs peuvent perturber ou ralentir la réussite de l'acquisition de la propreté :
+## **Plusieurs facteurs peuvent perturber ou ralentir la réussite de l'acquisition de la propreté :**
 
 - **L’approche de l’entrée à l’école** qui crée une sorte de deadline psychologique.
 - **Les comparaisons** entre enfants, générant stress et pression.
@@ -107,14 +107,14 @@ L’essentiel est de rester **patient** et d’éviter de créer une pression ex
 <br><br>
 
 
-## Les processus d’évolution vers l’acquisition de la propreté :
+## **Les processus d’évolution vers l’acquisition de la propreté :**
 
 - **La maturation physiologique** : L’acquisition du contrôle des sphincters, ces muscles qui permettent d’ouvrir et de fermer la vessie et l’anus.
 - **Avant 20 mois** , les terminaisons nerveuses ne sont pas encore complètement développées, ce qui empêche l’enfant de ressentir quand sa vessie est pleine ou d’avoir envie de faire ses besoins.
 - **La maturation intellectuelle** : L’enfant doit prendre conscience de son besoin d’évacuer et être capable de communiquer avec l’adulte pour demander le pot.
 - **Le lien affectif**  : L’enfant doit avoir le désir de "devenir grand". Il peut aussi ressentir une certaine résistance à cette étape et vouloir freiner son apprentissage.
 
-## Les activités en lien avec l'acquisition de la propreté:
+## **Les activités en lien avec l'acquisition de la propreté:**
 
 - **Les livres** : Des histoires et des illustrations sur le thème de la propreté, pour aider l’enfant à mieux comprendre le processus.
 - **Le transvasement** : Activité consistant à vider et remplir des contenants, ce qui aide à développer la coordination et la compréhension des concepts de "plein" et "vide".
