@@ -74,13 +74,13 @@ L'enfant adopte sa nouvelle tétine sans collerette additionnelle, semblable à 
 ### **Vous trouverez dans le kit Clipp:**
 - **Une tétine** certifiée CE sans BPA,
 - **5 collerettes**  de sevrage,
-- **une notice**  d'utilisation de ce dispositif médical,
+- **une notice**  d'utilisation détaillée pour accompagner chaque étape du sevrage,
 - <a href="https://www.clipp.fr/wp-content/uploads/2024/02/calendrier-pour-arreter-la-tetine.pdf" target="_blank" class="styled-link-article">
        Télécharger le calendrier ludique
-  </a>,
+  </a>pour suivre les progrès de votre enfant,
 - <a href="https://www.clipp.fr/wp-content/uploads/2024/02/DIPLOME-CLIPP-ARRET-TETINE.pdf" target="_blank" class="styled-link-article">
       Télécharger le diplôme de récompense
-  </a>.
+  </a>pour valoriser ses réussites.
 
 <br><br>
 
