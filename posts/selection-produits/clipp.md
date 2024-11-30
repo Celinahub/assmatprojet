@@ -54,23 +54,36 @@ jsonLd: >
   }
 ---
 
+<br><br>
 
 ## Comment arrêter la tétine ?
-L'arrêt de la tétine est une grande étape pour un enfant. Passé un certain âge, l'utilisation intensive de la tétine peut causer des dommages sur le développement buccodentaire et freine le developpement du langage. 
+L'arrêt de la tétine est une grande étape pour un enfant. Passé un certain âge, l'utilisation intensive de la tétine peut causer des dommages sur le développement buccodentaire et freine le développement du langage. 
+
+<br><br>
 
 ### Clipp: la solution miracle
 J'ai découvert ce dispositif grâce à une famille. J'ai voulu tester cette solution à mon tour pour mon enfant de 2 ans.
 
-### La méthode servrage en douceur
-Cette solution est idéale pour un servrage progressif. La tétine Clipp propose 5 collerettes empilables permettant de réduire la surface de l'embout de succion.
+### La méthode servage en douceur
+Cette solution est idéale pour un servage progressif. La tétine Clipp propose 5 collerettes empilables permettant de réduire la surface de l'embout de succion. Le sevrage se fait au rythme de l'enfant en l'impliquant dans chaque étapes pour un arrêt simple et bienveillant.
 
-L'enfant adopte sa nouvelle tétine sans collerette additionnelle, semblable à la précedente tétine dans un premier temps. Chaque semaine une nouvelle collerette est ajoutée. L'accumulation progressive de collerette permet des succions espacées, l'enfant garde sa tétine en perdant le reflexe de la mettre à la bouche.
+L'enfant adopte sa nouvelle tétine sans collerette additionnelle, semblable à la précédente tétine dans un premier temps. Chaque semaine une nouvelle collerette est ajoutée. L'accumulation progressive de collerette permet des succions espacées, l'enfant garde sa tétine en perdant le réflexe de la mettre à la bouche.
+
+<br><br>
 
 ### Vous trouverez dans le kit Clipp:
-- **Une tétine** certifiée CE.
-- **5 collerettes**  de seuvrage fabriquées en France avec une notice.
+- **Une tétine** certifiée CE sans BPA,
+- **5 collerettes**  de sevrage,
+- **une notice**  d'utilisation de ce dispositif médical,
+- <a href="https://www.clipp.fr/wp-content/uploads/2024/02/calendrier-pour-arreter-la-tetine.pdf" target="_blank" class="styled-link-article">
+       Télécharger le calendrier ludique
+  </a>,
+- <a href="https://www.clipp.fr/wp-content/uploads/2024/02/DIPLOME-CLIPP-ARRET-TETINE.pdf" target="_blank" class="styled-link-article">
+      Télécharger le diplôme de récompense
+  </a>.
 
+<br><br>
 
 ### Mon expérience produit
-La tétine avec l'ajout progressif de collerettes a été aceptée. J'ai espacé de 15 jours la fixation d'une nouvele collerette. La tétine commençais à être délaissée. Un soir la tétine a été perdue et la nuit s'est très bien passée. La tétine retrouvée nous l'avons caché et le manque ne s'est pas fait sentir!
+La tétine avec l'ajout progressif de collerettes a été acceptée. J'ai espacé de 15 jours la fixation d'une nouvelle collerette. La tétine commençais à être délaissée. Un soir la tétine a été perdue et la nuit s'est très bien passée. La tétine retrouvée nous l'avons caché et le manque ne s'est pas fait sentir!
 

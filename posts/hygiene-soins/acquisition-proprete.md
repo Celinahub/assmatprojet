@@ -55,9 +55,11 @@ jsonLd: >
 
 
 ## Quand et comment proposer le pot ou le réducteur ?
-L’acquisition de la propreté est une étape naturelle et spontanée du développement, comme la marche ou la parole. Ne vous inquiétez pas : ce moment tant attendu viendra. N'écoutez pas les idées reçues, votre enfant sera accepté à l'école maternelle, même s'il a encore quelques petits accidents.
+L'acquisition de la propreté est une étape importante dans le développement de l’enfant, au même titre que la marche ou le langage. Chaque enfant progresse à son propre rythme, et il est essentiel de lui faire confiance. Voici les signaux à observer et les meilleures pratiques pour l’accompagner dans cette transition.
 
-C'est l'enfant qui décide de lui-même ; faites-lui confiance, car plusieurs signes ne trompent pas:
+
+## Quand votre enfant est-il prêt ?
+Votre enfant montre qu’il est prêt à abandonner les couches lorsqu’il :
 
 - **Il vous informe** qu'il a fait « pipi » ou « caca ».
 - **Il commence à exprimer ses besoins** par exemple en demandant de l'eau.
@@ -72,9 +74,18 @@ C'est l'enfant qui décide de lui-même ; faites-lui confiance, car plusieurs si
 
 Le secret d'une acquisition de la propreté réussie est de ne pas se focaliser dessus ni de créer un rapport de force ou de pression. À 2 ans et demi ou 3 ans, votre enfant traverse souvent une période d'opposition marquée par le "NON". Dès que vous sentez qu'il est prêt, l'accompagnement peut commencer chez vous. En tant que premiers référents affectifs, vous jouez un rôle clé dans cette étape privilégiée et intime. Pour assurer une continuité dans cet accompagnement, le professionnel de la petite enfance prendra ensuite le relais. Ensemble, nous formons une équipe pour soutenir votre enfant dans cette démarche.
 
+## Comment accompagner cette étape ?
+L’essentiel est de rester **patient** et d’éviter de créer une pression excessive. Voici quelques étapes clés :
+
+- **Introduisez le pot progressivement** : placez-le à disposition de l’enfant et laissez-le explorer.
+- **Encouragez sans forcer** : félicitez ses essais, même s’ils ne sont pas toujours réussis.
+- **Adaptez-vous à son rythme** : si une régression survient, rassurez votre enfant et laissez-lui du temps.
+
+
+
 ## Une régression ou une stagnation peut survenir dans les cas suivants :
 - **Les selles** peuvent être perçues par l'enfant comme une partie de lui-même qui se détache et disparaît dans les toilettes, ce qui peut provoquer une certaine angoisse.
-- **Un démenagement ou une naissance** peuvent également entraîner une régression. Dans ce cas, expliquez à votre enfant que ce n'est pas grave. S'il réclame la couche, écoutez-le, il se sentira ainsi compris et rassuré. Reculer pour mieux avancer est souvent la meilleure approche. Le besoin de sécurité est essentiel à cette étape.
+- **Un déménagement ou l’arrivée d’un nouveau-né** peuvent également entraîner une régression. Dans ce cas, expliquez à votre enfant que ce n'est pas grave. S'il réclame la couche, écoutez-le, il se sentira ainsi compris et rassuré. Reculer pour mieux avancer est souvent la meilleure approche. Le besoin de sécurité est essentiel à cette étape.
 
 ## Plusieurs facteurs peuvent perturber ou ralentir la réussite de l'acquisition de la propreté :
 
