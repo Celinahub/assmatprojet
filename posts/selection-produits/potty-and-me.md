@@ -88,13 +88,24 @@ Ce système évite :
 
 En fin de journée, il suffit de vider le contenu dans une poubelle, un geste simple, rapide et hygiénique.
 
+**Découvrez en vidéo une comparaison entre le potty training et l'utilisation d’un pot classique:**
+<div class="ratio ratio-16x9">
+  <iframe 
+    src="https://www.youtube.com/embed/jEcvUC_A3YY" 
+    title="YouTube video" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+
+
 <br><br>
 
 ## **Un kit nomade et écologique** 
 
-Le pot MyPottyTraining est conçu pour faciliter la vie des parents et des assistantes maternelles agréées, même en déplacement. **Son panier de rangement** permet d’avoir à portée de main tout le nécessaire d’hygiène : papier toilette, lingettes, gel hydroalcoolique, etc. C’est un **véritable kit nomade**, parfait pour les longues promenades au parc ou les sorties en famille, surtout lorsqu’il n’y a pas de point d’eau à proximité.
-
-En bonus, vous pouvez y glisser une trousse d’urgence pour parer aux petits bobos. Ce pot devient ainsi un compagnon indispensable pour les parents et les enfants en pleine aquisition de la propreté.
+Le pot MyPottyTraining est conçu pour faciliter la vie des parents et des assistantes maternelles agréées, même en déplacement. C’est un **véritable kit nomade**, parfait pour les longues promenades au parc ou les sorties en famille, surtout lorsqu’il n’y a pas de point d’eau à proximité.
 
 
 Pour plus de **conseils sur l’aquisition de la propreté**, en tant qu’assistante maternelle agréée à Brétigny-sur-Orge, je vous accompagne vers une transition réussie vers le pot grâce à cet article :
