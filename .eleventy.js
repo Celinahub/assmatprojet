@@ -55,20 +55,8 @@ module.exports = function(eleventyConfig) {
   });
 
   // Ajouter le filtre absoluteUrl
-  eleventyConfig.addFilter("absoluteUrl", (path, base = "") => {
-    if (!path) {
-      return ""; // Retourne une chaîne vide si path est manquant
-    }
-  
-    // Si aucune base n'est fournie, on utilise l'URL globale définie dans les données globales
-    base = base || "https://chubert91assmat.netlify.app";  // Utilisez votre URL de base ici
-  
-    try {
-      return new URL(path, base).toString();  // Crée l'URL absolue
-    } catch (err) {
-      console.error("Invalid URL:", err.message);  // Affiche l'erreur si l'URL est invalide
-      return path;  // Retourne le chemin original si une erreur se produit
-    }
+  eleventyConfig.addFilter("absoluteUrl", function(url) {
+    return new URL(url, BASE_URL).toString();
   });
 
   // Ajouter le plugin eleventy-navigation
@@ -200,11 +188,6 @@ eleventyConfig.addFilter("truncateWords", function (content, numWords) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("_headers");
-
-  // Exclure les fichiers sensibles
-eleventyConfig.ignores.add(".env");
-eleventyConfig.ignores.add("package.json");
-eleventyConfig.ignores.add("node_modules/**");
 
 
   // Ajouter des alias pour les layouts
