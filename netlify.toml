@@ -22,6 +22,9 @@
   to = "/404.html"                 # Page 404 personnalisée
   status = 404                     # Code de statut HTTP
 
+
+
+
 # Configuration des en-têtes HTTP
 [[headers]]
   for = "/*.css"

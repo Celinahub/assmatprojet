@@ -3478,6 +3478,15 @@ position: relative; /* Ajout de position relative */
 
 
 
+
+
+/* Style pour le carousel des articles.md dans post.njk*/
+
+
+
+
+
+
 /* Style pour le bouton liens des fichiers md article*/
 .btn-article {
    text-align: center;
